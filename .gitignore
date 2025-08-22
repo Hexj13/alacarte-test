@@ -1,0 +1,30 @@
+# IDEs
+.idea/
+.vscode/
+.cursor/
+.history/
+*.iml
+
+# Node.js dependencies
+node_modules/
+
+# Playwright and Allure test artifacts
+/test-results/
+/playwright-report/
+/allure-report/
+/allure-results/
+/blob-report/
+/playwright/.cache/
+/screenshots/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Environment
+.env
+/auth
