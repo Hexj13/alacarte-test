@@ -1,0 +1,2011 @@
+<div class="content-wrapper position-relative" style="min-height: 2120px">
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Room search</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="content contract-search">
+    <div class="container-fluid">
+      <div class="card">
+        <div class="card-body">
+          <div class="search-form">
+            <form
+              method="get"
+              action="https://pre.alacarte.ae/contract-search"
+              id="search_form"
+            >
+              <fieldset>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-lg-2">
+                      <div class="switch-toggle form-group type-price">
+                        <label for="name">Price</label>
+                        <div
+                          class="btn-group btn-group-toggle w-100"
+                          data-toggle="buttons"
+                        >
+                          <label class="btn btn-secondary active">
+                            <input
+                              type="radio"
+                              name="price"
+                              id="net"
+                              value="net"
+                              checked=""
+                            />
+                            Net
+                          </label>
+                          <label class="btn btn-secondary gross-price">
+                            <input
+                              type="radio"
+                              name="price"
+                              id="gross"
+                              value="gross"
+                            />
+                            Gross
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <label>Dates</label>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Заезд"
+                            name="since"
+                            value="23.08.2025"
+                            data-provide="datepicker"
+                            autocomplete="off"
+                            data-maska-tokens="0:[0-9]:optional|9:[0-9]:multiple"
+                            data-maska="##.##.####"
+                            data-maska-value="23.08.2025"
+                          />
+                        </div>
+                        <div class="col-sm-6">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Отъезд"
+                            name="until"
+                            value="25.08.2025"
+                            data-provide="datepicker"
+                            autocomplete="off"
+                            data-maska-tokens="0:[0-9]:optional|9:[0-9]:multiple"
+                            data-maska="##.##.####"
+                            data-maska-value="25.08.2025"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                      <div class="row">
+                        <div class="col-sm-2">
+                          <label>Nights</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Ночей"
+                            name="nights"
+                            value=""
+                          />
+                        </div>
+                        <div class="col-sm-5">
+                          <label>Nationality</label>
+                          <select
+                            class="form-control select2-hidden-accessible"
+                            name="nationality_id"
+                            data-select2-id="4"
+                            tabindex="-1"
+                            aria-hidden="true"
+                          >
+                            <option value="">Nationality</option>
+                            <option value="1">Afghanistan</option>
+                            <option value="2">Aland Islands</option>
+                            <option value="3">Albania</option>
+                            <option value="4">Algeria</option>
+                            <option value="5">American Samoa</option>
+                            <option value="6">Andorra</option>
+                            <option value="7">Angola</option>
+                            <option value="8">Anguilla</option>
+                            <option value="9">Antarctica</option>
+                            <option value="10">Antigua and Barbuda</option>
+                            <option value="11">Argentina</option>
+                            <option value="12">Armenia</option>
+                            <option value="13">Aruba</option>
+                            <option value="14">Australia</option>
+                            <option value="15">Austria</option>
+                            <option value="16">Azerbaijan</option>
+                            <option value="17">Bahamas</option>
+                            <option value="18">Bahrain</option>
+                            <option value="19">Bangladesh</option>
+                            <option value="20">Barbados</option>
+                            <option value="21">Belarus</option>
+                            <option value="22">Belgium</option>
+                            <option value="23">Belize</option>
+                            <option value="24">Benin</option>
+                            <option value="25">Bermuda</option>
+                            <option value="26">Bhutan</option>
+                            <option value="27">
+                              Bolivia, Plurinational State of
+                            </option>
+                            <option value="28">
+                              Bonaire, Sint Eustatius and Saba
+                            </option>
+                            <option value="29">Bosnia and Herzegovina</option>
+                            <option value="30">Botswana</option>
+                            <option value="31">Bouvet Island</option>
+                            <option value="32">Brazil</option>
+                            <option value="33">
+                              British Indian Ocean Territory
+                            </option>
+                            <option value="34">Brunei Darussalam</option>
+                            <option value="35">Bulgaria</option>
+                            <option value="36">Burkina Faso</option>
+                            <option value="37">Burundi</option>
+                            <option value="38">Cabo Verde</option>
+                            <option value="39">Cambodia</option>
+                            <option value="40">Cameroon</option>
+                            <option value="41">Canada</option>
+                            <option value="42">Cayman Islands</option>
+                            <option value="43">Central African Republic</option>
+                            <option value="44">Chad</option>
+                            <option value="45">Chile</option>
+                            <option value="46">China</option>
+                            <option value="47">Christmas Island</option>
+                            <option value="48">Cocos (Keeling) Islands</option>
+                            <option value="49">Colombia</option>
+                            <option value="50">Comoros</option>
+                            <option value="51">Congo</option>
+                            <option value="52">
+                              Congo, the Democratic Republic of the
+                            </option>
+                            <option value="53">Cook Islands</option>
+                            <option value="54">Costa Rica</option>
+                            <option value="55">Croatia</option>
+                            <option value="56">Cuba</option>
+                            <option value="57">Curacao</option>
+                            <option value="58">Cyprus</option>
+                            <option value="59">Czech Republic</option>
+                            <option value="60">Côte d'Ivoire</option>
+                            <option value="61">Denmark</option>
+                            <option value="62">Djibouti</option>
+                            <option value="63">Dominica</option>
+                            <option value="64">Dominican Republic</option>
+                            <option value="65">Ecuador</option>
+                            <option value="66">Egypt</option>
+                            <option value="67">El Salvador</option>
+                            <option value="68">Equatorial Guinea</option>
+                            <option value="69">Eritrea</option>
+                            <option value="70">Estonia</option>
+                            <option value="71">Ethiopia</option>
+                            <option value="72">
+                              Falkland Islands (Malvinas)
+                            </option>
+                            <option value="73">Faroe Islands</option>
+                            <option value="74">Fiji</option>
+                            <option value="75">Finland</option>
+                            <option value="76">France</option>
+                            <option value="77">French Guiana</option>
+                            <option value="78">French Polynesia</option>
+                            <option value="79">
+                              French Southern Territories
+                            </option>
+                            <option value="80">Gabon</option>
+                            <option value="81">Gambia</option>
+                            <option value="82">Georgia</option>
+                            <option value="83">Germany</option>
+                            <option value="84">Ghana</option>
+                            <option value="85">Gibraltar</option>
+                            <option value="86">Greece</option>
+                            <option value="87">Greenland</option>
+                            <option value="88">Grenada</option>
+                            <option value="89">Guadeloupe</option>
+                            <option value="90">Guam</option>
+                            <option value="91">Guatemala</option>
+                            <option value="92">Guernsey</option>
+                            <option value="93">Guinea</option>
+                            <option value="94">Guinea-Bissau</option>
+                            <option value="95">Guyana</option>
+                            <option value="96">Haiti</option>
+                            <option value="97">
+                              Heard Island and McDonald Islands
+                            </option>
+                            <option value="98">
+                              Holy See (Vatican City State)
+                            </option>
+                            <option value="99">Honduras</option>
+                            <option value="100">Hong Kong</option>
+                            <option value="101">Hungary</option>
+                            <option value="102">Iceland</option>
+                            <option value="103">India</option>
+                            <option value="104">Indonesia</option>
+                            <option value="105">
+                              Iran, Islamic Republic of
+                            </option>
+                            <option value="106">Iraq</option>
+                            <option value="107">Ireland</option>
+                            <option value="108">Isle of Man</option>
+                            <option value="109">Israel</option>
+                            <option value="110">Italy</option>
+                            <option value="111">Jamaica</option>
+                            <option value="112">Japan</option>
+                            <option value="113">Jersey</option>
+                            <option value="114">Jordan</option>
+                            <option value="115">Kazakhstan</option>
+                            <option value="116">Kenya</option>
+                            <option value="117">Kiribati</option>
+                            <option value="118">
+                              Korea, Democratic People's Republic of
+                            </option>
+                            <option value="119">Korea, Republic of</option>
+                            <option value="120">Kuwait</option>
+                            <option value="121">Kyrgyzstan</option>
+                            <option value="122">
+                              Lao People's Democratic Republic
+                            </option>
+                            <option value="123">Latvia</option>
+                            <option value="124">Lebanon</option>
+                            <option value="125">Lesotho</option>
+                            <option value="126">Liberia</option>
+                            <option value="127">Libya</option>
+                            <option value="128">Liechtenstein</option>
+                            <option value="129">Lithuania</option>
+                            <option value="130">Luxembourg</option>
+                            <option value="131">Macao</option>
+                            <option value="132">
+                              Macedonia, the former Yugoslav Republic of
+                            </option>
+                            <option value="133">Madagascar</option>
+                            <option value="134">Malawi</option>
+                            <option value="135">Malaysia</option>
+                            <option value="136">Maldives</option>
+                            <option value="137">Mali</option>
+                            <option value="138">Malta</option>
+                            <option value="139">Marshall Islands</option>
+                            <option value="140">Martinique</option>
+                            <option value="141">Mauritania</option>
+                            <option value="142">Mauritius</option>
+                            <option value="143">Mayotte</option>
+                            <option value="144">Mexico</option>
+                            <option value="145">
+                              Micronesia, Federated States of
+                            </option>
+                            <option value="146">Moldova, Republic of</option>
+                            <option value="147">Monaco</option>
+                            <option value="148">Mongolia</option>
+                            <option value="149">Montenegro</option>
+                            <option value="150">Montserrat</option>
+                            <option value="151">Morocco</option>
+                            <option value="152">Mozambique</option>
+                            <option value="153">Myanmar</option>
+                            <option value="154">Namibia</option>
+                            <option value="155">Nauru</option>
+                            <option value="156">Nepal</option>
+                            <option value="157">Netherlands</option>
+                            <option value="158">Netherlands Antilles</option>
+                            <option value="159">New Caledonia</option>
+                            <option value="160">New Zealand</option>
+                            <option value="161">Nicaragua</option>
+                            <option value="162">Niger</option>
+                            <option value="163">Nigeria</option>
+                            <option value="164">Niue</option>
+                            <option value="165">Norfolk Island</option>
+                            <option value="166">
+                              Northern Mariana Islands
+                            </option>
+                            <option value="167">Norway</option>
+                            <option value="168">Oman</option>
+                            <option value="169">Pakistan</option>
+                            <option value="170">Palau</option>
+                            <option value="171">Palestine, State of</option>
+                            <option value="172">Panama</option>
+                            <option value="173">Papua New Guinea</option>
+                            <option value="174">Paraguay</option>
+                            <option value="175">Peru</option>
+                            <option value="176">Philippines</option>
+                            <option value="177">Pitcairn</option>
+                            <option value="178">Poland</option>
+                            <option value="179">Portugal</option>
+                            <option value="180">Puerto Rico</option>
+                            <option value="181">Qatar</option>
+                            <option value="182">Reunion</option>
+                            <option value="183">Romania</option>
+                            <option
+                              value="184"
+                              selected="selected"
+                              data-select2-id="6"
+                            >
+                              Russian Federation
+                            </option>
+                            <option value="185">Rwanda</option>
+                            <option value="186">Saint Barthelemy</option>
+                            <option value="187">
+                              Saint Helena, Ascension and Tristan da Cunha
+                            </option>
+                            <option value="188">Saint Kitts and Nevis</option>
+                            <option value="189">Saint Lucia</option>
+                            <option value="190">
+                              Saint Martin (French part)
+                            </option>
+                            <option value="191">
+                              Saint Pierre and Miquelon
+                            </option>
+                            <option value="192">
+                              Saint Vincent and the Grenadines
+                            </option>
+                            <option value="193">Samoa</option>
+                            <option value="194">San Marino</option>
+                            <option value="195">Sao Tome and Principe</option>
+                            <option value="196">Saudi Arabia</option>
+                            <option value="197">Senegal</option>
+                            <option value="198">Serbia</option>
+                            <option value="199">Seychelles</option>
+                            <option value="200">Sierra Leone</option>
+                            <option value="201">Singapore</option>
+                            <option value="202">
+                              Sint Maarten (Dutch part)
+                            </option>
+                            <option value="203">Slovakia</option>
+                            <option value="204">Slovenia</option>
+                            <option value="205">Solomon Islands</option>
+                            <option value="206">Somalia</option>
+                            <option value="207">South Africa</option>
+                            <option value="208">
+                              South Georgia and the South Sandwich Islands
+                            </option>
+                            <option value="209">South Sudan</option>
+                            <option value="210">Spain</option>
+                            <option value="211">Sri Lanka</option>
+                            <option value="212">Sudan</option>
+                            <option value="213">Suriname</option>
+                            <option value="214">Svalbard and Jan Mayen</option>
+                            <option value="215">Swaziland</option>
+                            <option value="216">Sweden</option>
+                            <option value="217">Switzerland</option>
+                            <option value="218">Syrian Arab Republic</option>
+                            <option value="219">
+                              Taiwan, Province of China
+                            </option>
+                            <option value="220">Tajikistan</option>
+                            <option value="221">
+                              Tanzania, United Republic of
+                            </option>
+                            <option value="222">Thailand</option>
+                            <option value="223">Timor-Leste</option>
+                            <option value="224">Togo</option>
+                            <option value="225">Tokelau</option>
+                            <option value="226">Tonga</option>
+                            <option value="227">Trinidad and Tobago</option>
+                            <option value="228">Tunisia</option>
+                            <option value="229">Turkey</option>
+                            <option value="230">Turkmenistan</option>
+                            <option value="231">
+                              Turks and Caicos Islands
+                            </option>
+                            <option value="232">Tuvalu</option>
+                            <option value="233">Uganda</option>
+                            <option value="234">Ukraine</option>
+                            <option value="235">United Arab Emirates</option>
+                            <option value="236">United Kingdom</option>
+                            <option value="237">United States</option>
+                            <option value="238">
+                              United States Minor Outlying Islands
+                            </option>
+                            <option value="239">Uruguay</option>
+                            <option value="240">Uzbekistan</option>
+                            <option value="241">Vanuatu</option>
+                            <option value="242">
+                              Venezuela, Bolivarian Republic of
+                            </option>
+                            <option value="243">Viet Nam</option>
+                            <option value="244">Virgin Islands, British</option>
+                            <option value="245">Virgin Islands, U.S.</option>
+                            <option value="246">Wallis and Futuna</option>
+                            <option value="247">Western Sahara</option>
+                            <option value="248">Yemen</option>
+                            <option value="249">Zambia</option>
+                            <option value="250">Zimbabwe</option></select
+                          ><span
+                            class="select2 select2-container select2-container--default"
+                            dir="ltr"
+                            data-select2-id="5"
+                            style="width: 306.25px"
+                            ><span class="selection"
+                              ><span
+                                class="select2-selection select2-selection--single"
+                                role="combobox"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                tabindex="0"
+                                aria-disabled="false"
+                                aria-labelledby="select2-nationality_id-i6-container"
+                                ><span
+                                  class="select2-selection__rendered"
+                                  id="select2-nationality_id-i6-container"
+                                  role="textbox"
+                                  aria-readonly="true"
+                                  title="Russian Federation"
+                                  >Russian Federation</span
+                                ><span
+                                  class="select2-selection__arrow"
+                                  role="presentation"
+                                  ><b
+                                    role="presentation"
+                                  ></b></span></span></span
+                            ><span
+                              class="dropdown-wrapper"
+                              aria-hidden="true"
+                            ></span
+                          ></span>
+                        </div>
+                        <div class="col-sm-3">
+                          <label>Country</label>
+                          <select
+                            class="form-control choose-country select2-hidden-accessible"
+                            name="country_id"
+                            data-select2-id="7"
+                            tabindex="-1"
+                            aria-hidden="true"
+                          >
+                            <option
+                              value=""
+                              selected="selected"
+                              data-select2-id="9"
+                            >
+                              Country
+                            </option>
+                            <option value="173">AAA</option>
+                            <option value="184">AD</option>
+                            <option value="46">Albania</option>
+                            <option value="73">Algeria</option>
+                            <option value="168">Angola</option>
+                            <option value="153">Anguilla</option>
+                            <option value="124">Antigua and Barbuda</option>
+                            <option value="71">Argentina</option>
+                            <option value="11">Armenia</option>
+                            <option value="133">Aruba</option>
+                            <option value="220">AS</option>
+                            <option value="7">Australia</option>
+                            <option value="47">Austria</option>
+                            <option value="210">AX</option>
+                            <option value="12">Azerbaijan</option>
+                            <option value="136">Bahamas</option>
+                            <option value="14">Bahrain</option>
+                            <option value="13">Bangladesh</option>
+                            <option value="125">Barbados</option>
+                            <option value="141">Belarus</option>
+                            <option value="72">Belgium</option>
+                            <option value="130">Belize</option>
+                            <option value="178">Benin</option>
+                            <option value="82">Bermuda</option>
+                            <option value="201">BF</option>
+                            <option value="1">Bhutan</option>
+                            <option value="207">BI</option>
+                            <option value="198">BN</option>
+                            <option value="92">
+                              Bolivia (Plurinational State of)
+                            </option>
+                            <option value="140">
+                              Bonaire, Sint Eustatius and Saba
+                            </option>
+                            <option value="139">Bosnia and Herzegovina</option>
+                            <option value="93">Botswana</option>
+                            <option value="85">Brazil</option>
+                            <option value="151">British Virgin Islands</option>
+                            <option value="147">Bulgaria</option>
+                            <option value="161">Cabo Verde</option>
+                            <option value="37">Cambodia</option>
+                            <option value="162">Cameroon</option>
+                            <option value="48">Canada</option>
+                            <option value="116">Cayman Islands</option>
+                            <option value="224">CC</option>
+                            <option value="230">Chad</option>
+                            <option value="58">Chile</option>
+                            <option value="5">China</option>
+                            <option value="19">
+                              China, Hong Kong Special Administrative Region
+                            </option>
+                            <option value="42">
+                              China, Macao Special Administrative Region
+                            </option>
+                            <option value="187">CK</option>
+                            <option value="76">Colombia</option>
+                            <option value="158">Congo</option>
+                            <option value="86">Costa Rica</option>
+                            <option value="177">Côte d'Ivoire</option>
+                            <option value="87">Croatia</option>
+                            <option value="228">Cuba</option>
+                            <option value="83">Curaçao</option>
+                            <option value="105">Cyprus</option>
+                            <option value="78">Czechia</option>
+                            <option value="163">
+                              Democratic Republic of the Congo
+                            </option>
+                            <option value="75">Denmark</option>
+                            <option value="111">Djibouti</option>
+                            <option value="166">Dominica</option>
+                            <option value="69">Dominican Republic</option>
+                            <option value="114">Ecuador</option>
+                            <option value="95">Egypt</option>
+                            <option value="120">El Salvador</option>
+                            <option value="179">Equatorial Guinea</option>
+                            <option value="218">ER</option>
+                            <option value="138">Estonia</option>
+                            <option value="160">Eswatini</option>
+                            <option value="96">Ethiopia</option>
+                            <option value="155">Faroe Islands</option>
+                            <option value="17">Fiji</option>
+                            <option value="59">Finland</option>
+                            <option value="217">FM</option>
+                            <option value="8">France</option>
+                            <option value="171">French Guiana</option>
+                            <option value="118">French Polynesia</option>
+                            <option value="204">GA</option>
+                            <option value="18">Georgia</option>
+                            <option value="15">Germany</option>
+                            <option value="202">GG</option>
+                            <option value="102">Ghana</option>
+                            <option value="208">GI</option>
+                            <option value="186">GM</option>
+                            <option value="206">GN</option>
+                            <option value="185">GP</option>
+                            <option value="60">Greece</option>
+                            <option value="170">Greenland</option>
+                            <option value="150">Grenada</option>
+                            <option value="122">Guam</option>
+                            <option value="115">Guatemala</option>
+                            <option value="84">Guyana</option>
+                            <option value="215">GW</option>
+                            <option value="134">Haiti</option>
+                            <option value="61">Honduras</option>
+                            <option value="62">Hungary</option>
+                            <option value="63">Iceland</option>
+                            <option value="194">IM</option>
+                            <option value="21">India</option>
+                            <option value="20">Indonesia</option>
+                            <option value="183">
+                              Iran (Islamic Republic of)
+                            </option>
+                            <option value="28">Iraq</option>
+                            <option value="106">Ireland</option>
+                            <option value="97">Israel</option>
+                            <option value="29">Italy</option>
+                            <option value="131">Jamaica</option>
+                            <option value="22">Japan</option>
+                            <option value="152">Jersey</option>
+                            <option value="30">Jordan</option>
+                            <option value="36">Kazakhstan</option>
+                            <option value="55">Kenya</option>
+                            <option value="219">KI</option>
+                            <option value="214">KM</option>
+                            <option value="23">Kuwait</option>
+                            <option value="104">Kyrgyzstan</option>
+                            <option value="132">
+                              Lao People's Democratic Republic
+                            </option>
+                            <option value="142">Latvia</option>
+                            <option value="112">Lebanon</option>
+                            <option value="212">LI</option>
+                            <option value="64">Lithuania</option>
+                            <option value="199">LR</option>
+                            <option value="200">LS</option>
+                            <option value="157">Luxembourg</option>
+                            <option value="144">Madagascar</option>
+                            <option value="98">Malawi</option>
+                            <option value="31">Malaysia</option>
+                            <option value="24">Maldives</option>
+                            <option value="56">Malta</option>
+                            <option value="88">Mauritius</option>
+                            <option value="181">Mayotte</option>
+                            <option value="6">Mexico</option>
+                            <option value="197">MF</option>
+                            <option value="213">ML</option>
+                            <option value="107">Monaco</option>
+                            <option value="148">Mongolia</option>
+                            <option value="108">Montenegro</option>
+                            <option value="65">Morocco</option>
+                            <option value="176">Mozambique</option>
+                            <option value="193">MP</option>
+                            <option value="189">MQ</option>
+                            <option value="195">MR</option>
+                            <option value="227">MS</option>
+                            <option value="127">Myanmar</option>
+                            <option value="99">Namibia</option>
+                            <option value="39">Nepal</option>
+                            <option value="43">Netherlands</option>
+                            <option value="103">New Caledonia</option>
+                            <option value="51">New Zealand</option>
+                            <option value="196">NF</option>
+                            <option value="146">Nicaragua</option>
+                            <option value="182">Niger</option>
+                            <option value="50">Nigeria</option>
+                            <option value="57">Norway</option>
+                            <option value="174">NOTAPPLICABLE</option>
+                            <option value="222">NU</option>
+                            <option value="232">NY</option>
+                            <option value="25">Oman</option>
+                            <option value="40">Pakistan</option>
+                            <option value="145">Palau</option>
+                            <option value="70">Panama</option>
+                            <option value="159">Papua New Guinea</option>
+                            <option value="119">Paraguay</option>
+                            <option value="117">Peru</option>
+                            <option value="32">Philippines</option>
+                            <option value="225">PM</option>
+                            <option value="44">Poland</option>
+                            <option value="45">Portugal</option>
+                            <option value="192">PS</option>
+                            <option value="80">Puerto Rico</option>
+                            <option value="33">Qatar</option>
+                            <option value="35">Republic of Korea</option>
+                            <option value="66">Republic of Moldova</option>
+                            <option value="123">Réunion</option>
+                            <option value="74">Romania</option>
+                            <option value="172">Russian Federation</option>
+                            <option value="94">Rwanda</option>
+                            <option value="149">Saint Barthélemy</option>
+                            <option value="180">Saint Helena</option>
+                            <option value="135">Saint Kitts and Nevis</option>
+                            <option value="126">Saint Lucia</option>
+                            <option value="121">Samoa</option>
+                            <option value="167">SAU</option>
+                            <option value="26">Saudi Arabia</option>
+                            <option value="209">SB</option>
+                            <option value="223">SD</option>
+                            <option value="175">Senegal</option>
+                            <option value="52">Serbia</option>
+                            <option value="53">Seychelles</option>
+                            <option value="165">Sierra Leone</option>
+                            <option value="34">Singapore</option>
+                            <option value="164">
+                              Sint Maarten (Dutch part)
+                            </option>
+                            <option value="216">SJ</option>
+                            <option value="110">Slovakia</option>
+                            <option value="109">Slovenia</option>
+                            <option value="211">SM</option>
+                            <option value="101">South Africa</option>
+                            <option value="16">Spain</option>
+                            <option value="38">Sri Lanka</option>
+                            <option value="226">SS</option>
+                            <option value="203">ST</option>
+                            <option value="100">Suriname</option>
+                            <option value="67">Sweden</option>
+                            <option value="49">Switzerland</option>
+                            <option value="154">Tajikistan</option>
+                            <option value="190">TG</option>
+                            <option value="2">Thailand</option>
+                            <option value="143">
+                              The former Yugoslav Republic of Macedonia
+                            </option>
+                            <option value="205">TO</option>
+                            <option value="90">Trinidad and Tobago</option>
+                            <option value="89">Tunisia</option>
+                            <option value="27">Turkey</option>
+                            <option value="229">Turkmenistan</option>
+                            <option value="79">Turks and Caicos Islands</option>
+                            <option value="41">TW</option>
+                            <option value="68">Uganda</option>
+                            <option value="156">Ukraine</option>
+                            <option value="10">United Arab Emirates</option>
+                            <option value="128">United Kingdom</option>
+                            <option value="9">
+                              United Kingdom of Great Britain and Northern
+                              Ireland
+                            </option>
+                            <option value="54">
+                              United Republic of Tanzania
+                            </option>
+                            <option value="3">United States of America</option>
+                            <option value="91">
+                              United States Virgin Islands
+                            </option>
+                            <option value="137">Uruguay</option>
+                            <option value="81">Uzbekistan</option>
+                            <option value="191">VC</option>
+                            <option value="169">
+                              Venezuela (Bolivarian Republic of)
+                            </option>
+                            <option value="4">Viet Nam</option>
+                            <option value="188">VU</option>
+                            <option value="221">WF</option>
+                            <option value="113">XK</option>
+                            <option value="231">XY</option>
+                            <option value="77">Zambia</option>
+                            <option value="129">Zimbabwe</option></select
+                          ><span
+                            class="select2 select2-container select2-container--default"
+                            dir="ltr"
+                            data-select2-id="8"
+                            style="width: 177.75px"
+                            ><span class="selection"
+                              ><span
+                                class="select2-selection select2-selection--single"
+                                role="combobox"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                tabindex="0"
+                                aria-disabled="false"
+                                aria-labelledby="select2-country_id-66-container"
+                                ><span
+                                  class="select2-selection__rendered"
+                                  id="select2-country_id-66-container"
+                                  role="textbox"
+                                  aria-readonly="true"
+                                  title="Country"
+                                  >Country</span
+                                ><span
+                                  class="select2-selection__arrow"
+                                  role="presentation"
+                                  ><b
+                                    role="presentation"
+                                  ></b></span></span></span
+                            ><span
+                              class="dropdown-wrapper"
+                              aria-hidden="true"
+                            ></span
+                          ></span>
+                        </div>
+                        <div class="col-sm-2">
+                          <label>Currency</label>
+                          <select class="form-control" name="currency_id">
+                            <option value="" selected="selected">
+                              Currency
+                            </option>
+                            <option value="1">USD</option>
+                            <option value="2">EUR</option>
+                            <option value="3">AED</option>
+                            <option value="4">USDT</option>
+                            <option value="5">RUB</option>
+                            <option value="6">MYR</option>
+                            <option value="9">SAR</option>
+                            <option value="10">IDR</option>
+                            <option value="11">CNY</option>
+                            <option value="12">CHF</option>
+                            <option value="13">GBP</option>
+                            <option value="14">OMR</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <label>Search date</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="search_date"
+                        value=""
+                        data-provide="datepicker"
+                        autocomplete="off"
+                        style="background: #fff"
+                        data-maska-tokens="0:[0-9]:optional|9:[0-9]:multiple"
+                        data-maska="##.##.####"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <div class="row">
+                <div class="col-lg-4">
+                  <fieldset class="rooms">
+                    <legend>Unit</legend>
+
+                    <div class="form-group row">
+                      <label class="col-form-label col-xl-4">Adults</label>
+                      <div class="col-xl-8">
+                        <select class="form-control" name="rooms[1][adults]">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-form-label col-xl-4">Children</label>
+                      <div class="col-xl-8">
+                        <select
+                          class="form-control children_count"
+                          name="rooms[1][children]"
+                        >
+                          <option value="0">-</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group row" style="display: none">
+                      <label class="col-form-label col-xl-4"
+                        >Age of the first child</label
+                      >
+                      <div class="col-xl-8">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          class="form-control children_ages"
+                          name="rooms[1][children_ages][0]"
+                          value=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row" style="display: none">
+                      <label class="col-form-label col-xl-4"
+                        >Age of the second child</label
+                      >
+                      <div class="col-xl-8">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          class="form-control children_ages"
+                          name="rooms[1][children_ages][1]"
+                          value=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row" style="display: none">
+                      <label class="col-form-label col-xl-4"
+                        >Age of the third child</label
+                      >
+                      <div class="col-xl-8">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          class="form-control children_ages"
+                          name="rooms[1][children_ages][2]"
+                          value=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row" style="display: none">
+                      <label class="col-form-label col-xl-4"
+                        >Age of the forth child</label
+                      >
+                      <div class="col-xl-8">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          class="form-control children_ages"
+                          name="rooms[1][children_ages][3]"
+                          value=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row" style="display: none">
+                      <label class="col-form-label col-xl-4"
+                        >Age of the fifth child</label
+                      >
+                      <div class="col-xl-8">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          class="form-control children_ages"
+                          name="rooms[1][children_ages][4]"
+                          value=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row" style="display: none">
+                      <label class="col-form-label col-xl-4"
+                        >Age of the sixth child</label
+                      >
+                      <div class="col-xl-8">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          class="form-control children_ages"
+                          name="rooms[1][children_ages][5]"
+                          value=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row" style="display: none">
+                      <label class="col-form-label col-xl-4"
+                        >Age of the seventh child</label
+                      >
+                      <div class="col-xl-8">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          class="form-control children_ages"
+                          name="rooms[1][children_ages][6]"
+                          value=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row" style="display: none">
+                      <label class="col-form-label col-xl-4"
+                        >Age of the eighth child</label
+                      >
+                      <div class="col-xl-8">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          class="form-control children_ages"
+                          name="rooms[1][children_ages][7]"
+                          value=""
+                        />
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset style="display: none" class="rooms">
+                    <legend>Unit</legend>
+
+                    <div class="form-group row">
+                      <label class="col-form-label col-xl-4">Adults</label>
+                      <div class="col-xl-8">
+                        <select class="form-control" name="rooms[2][adults]">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-form-label col-xl-4">Children</label>
+                      <div class="col-xl-8">
+                        <select
+                          class="form-control children_count"
+                          name="rooms[2][children]"
+                        >
+                          <option value="0">-</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group row" style="display: none">
+                      <label class="col-form-label col-xl-4"
+                        >Age of the first child</label
+                      >
+                      <div class="col-xl-8">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          class="form-control children_ages"
+                          name="rooms[2][children_ages][0]"
+                          value=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row" style="display: none">
+                      <label class="col-form-label col-xl-4"
+                        >Age of the second child</label
+                      >
+                      <div class="col-xl-8">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          class="form-control children_ages"
+                          name="rooms[2][children_ages][1]"
+                          value=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row" style="display: none">
+                      <label class="col-form-label col-xl-4"
+                        >Age of the third child</label
+                      >
+                      <div class="col-xl-8">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          class="form-control children_ages"
+                          name="rooms[2][children_ages][2]"
+                          value=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row" style="display: none">
+                      <label class="col-form-label col-xl-4"
+                        >Age of the forth child</label
+                      >
+                      <div class="col-xl-8">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          class="form-control children_ages"
+                          name="rooms[2][children_ages][3]"
+                          value=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row" style="display: none">
+                      <label class="col-form-label col-xl-4"
+                        >Age of the fifth child</label
+                      >
+                      <div class="col-xl-8">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          class="form-control children_ages"
+                          name="rooms[2][children_ages][4]"
+                          value=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row" style="display: none">
+                      <label class="col-form-label col-xl-4"
+                        >Age of the sixth child</label
+                      >
+                      <div class="col-xl-8">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          class="form-control children_ages"
+                          name="rooms[2][children_ages][5]"
+                          value=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row" style="display: none">
+                      <label class="col-form-label col-xl-4"
+                        >Age of the seventh child</label
+                      >
+                      <div class="col-xl-8">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          class="form-control children_ages"
+                          name="rooms[2][children_ages][6]"
+                          value=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row" style="display: none">
+                      <label class="col-form-label col-xl-4"
+                        >Age of the eighth child</label
+                      >
+                      <div class="col-xl-8">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          class="form-control children_ages"
+                          name="rooms[2][children_ages][7]"
+                          value=""
+                        />
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset style="display: none" class="rooms">
+                    <legend>Unit</legend>
+
+                    <div class="form-group row">
+                      <label class="col-form-label col-xl-4">Adults</label>
+                      <div class="col-xl-8">
+                        <select class="form-control" name="rooms[3][adults]">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-form-label col-xl-4">Children</label>
+                      <div class="col-xl-8">
+                        <select
+                          class="form-control children_count"
+                          name="rooms[3][children]"
+                        >
+                          <option value="0">-</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group row" style="display: none">
+                      <label class="col-form-label col-xl-4"
+                        >Age of the first child</label
+                      >
+                      <div class="col-xl-8">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          class="form-control children_ages"
+                          name="rooms[3][children_ages][0]"
+                          value=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row" style="display: none">
+                      <label class="col-form-label col-xl-4"
+                        >Age of the second child</label
+                      >
+                      <div class="col-xl-8">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          class="form-control children_ages"
+                          name="rooms[3][children_ages][1]"
+                          value=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row" style="display: none">
+                      <label class="col-form-label col-xl-4"
+                        >Age of the third child</label
+                      >
+                      <div class="col-xl-8">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          class="form-control children_ages"
+                          name="rooms[3][children_ages][2]"
+                          value=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row" style="display: none">
+                      <label class="col-form-label col-xl-4"
+                        >Age of the forth child</label
+                      >
+                      <div class="col-xl-8">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          class="form-control children_ages"
+                          name="rooms[3][children_ages][3]"
+                          value=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row" style="display: none">
+                      <label class="col-form-label col-xl-4"
+                        >Age of the fifth child</label
+                      >
+                      <div class="col-xl-8">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          class="form-control children_ages"
+                          name="rooms[3][children_ages][4]"
+                          value=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row" style="display: none">
+                      <label class="col-form-label col-xl-4"
+                        >Age of the sixth child</label
+                      >
+                      <div class="col-xl-8">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          class="form-control children_ages"
+                          name="rooms[3][children_ages][5]"
+                          value=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row" style="display: none">
+                      <label class="col-form-label col-xl-4"
+                        >Age of the seventh child</label
+                      >
+                      <div class="col-xl-8">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          class="form-control children_ages"
+                          name="rooms[3][children_ages][6]"
+                          value=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row" style="display: none">
+                      <label class="col-form-label col-xl-4"
+                        >Age of the eighth child</label
+                      >
+                      <div class="col-xl-8">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          class="form-control children_ages"
+                          name="rooms[3][children_ages][7]"
+                          value=""
+                        />
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <div class="col-lg-4">
+                  <fieldset>
+                    <legend>Accommodation</legend>
+
+                    <div class="form-group row">
+                      <label class="col-form-label col-xl-4">Hotel</label>
+                      <div class="col-xl-8">
+                        <select
+                          class="form-control hotel select2-hidden-accessible"
+                          required=""
+                          selected=""
+                          name="hotel"
+                          data-select2-id="1"
+                          tabindex="-1"
+                          aria-hidden="true"
+                        >
+                          <option
+                            value=""
+                            selected="selected"
+                            data-select2-id="3"
+                          >
+                            -
+                          </option>
+                          <option value="178">Al ZORAH BEACH RESORT</option>
+                          <option value="18">ALILA KOTHAIFARU MALDIVES</option>
+                          <option value="172">ALINA TEST</option>
+                          <option value="20">
+                            AMILLA MALDIVES RESORT AND RESIDENCES
+                          </option>
+                          <option value="3">
+                            ANANTARA DHIGU MALDIVES RESORT
+                          </option>
+                          <option value="21">
+                            ANANTARA KIHAVAH MALDIVES VILLAS
+                          </option>
+                          <option value="133">
+                            ANANTARA SANTORINI ABU DHABI RETREAT
+                          </option>
+                          <option value="99">
+                            ANANTARA THE PALM DUBAI RESORT
+                          </option>
+                          <option value="141">
+                            ANANTARA WORLD ISLANDS DUBAI RESORT
+                          </option>
+                          <option value="6">ANGSANA VELAVARU</option>
+                          <option value="97">ATLANTIS THE PALM DUBAI</option>
+                          <option value="104">ATLANTIS THE ROYAL</option>
+                          <option value="22">
+                            ATMOSPHERE KANIFUSHI MALDIVES
+                          </option>
+                          <option value="23">
+                            AVANI+ FARES MALDIVES RESORT
+                          </option>
+                          <option value="25">BAGLIONI RESORT MALDIVES</option>
+                          <option value="138">
+                            BANYAN TREE DUBAI (ex. CAESARS PALACE DUBAI)
+                          </option>
+                          <option value="24">BANYAN TREE VABBINFARU</option>
+                          <option value="149">BIJAL</option>
+                          <option value="102">BVLGARI RESORT DUBAI</option>
+                          <option value="26">CANAREEF RESORT MALDIVES</option>
+                          <option value="109">
+                            CANONNIER BEACHCOMBER GOLF RESORT &amp; SPA
+                          </option>
+                          <option value="127">
+                            CLUB PRIVE by RIXOS SAADIYAT
+                          </option>
+                          <option value="27">COCOON MALDIVES</option>
+                          <option value="28">COMO COCOA ISLAND</option>
+                          <option value="29">COMO MAALIFUSHI</option>
+                          <option value="30">
+                            CONRAD MALDIVES RANGALI ISLAND
+                          </option>
+                          <option value="31">
+                            CONSTANCE MOOFUSHI MALDIVES
+                          </option>
+                          <option value="168">COUSINE ISLAND SEYCHELLES</option>
+                          <option value="177">DASHA TEST</option>
+                          <option value="139">DELANO DUBAI</option>
+                          <option value="32">DHAWA IHURU</option>
+                          <option value="33">DHIGALI MALDIVES</option>
+                          <option value="175">DHIGUFARU ISLAND RESORT</option>
+                          <option value="34">DIAMONDS ATHURUGA</option>
+                          <option value="86">DIAMONDS THUDUFUSHI</option>
+                          <option value="110">
+                            DINAROBIN BEACHCOMBER GOLF RESORT &amp; SPA
+                          </option>
+                          <option value="12">
+                            EMERALD FAARUFUSHI RESORT &amp; SPA
+                          </option>
+                          <option value="11">
+                            EMERALD MALDIVES RESORT &amp; SPA
+                          </option>
+                          <option value="163">
+                            EMIRATES PALACE MANDARIN ORIENTAL
+                          </option>
+                          <option value="37">
+                            FINOLHU, A SEASIDE COLLECTION RESORT
+                          </option>
+                          <option value="179">FIVE LUXE</option>
+                          <option value="165">
+                            FOUR SEASONS RESORT DUBAI AT JUMEIRAH BEACH
+                          </option>
+                          <option value="36">
+                            FOUR SEASONS RESORT MALDIVES AT KUDA HURAA
+                          </option>
+                          <option value="38">
+                            FOUR SEASONS RESORT MALDIVES AT LANDAA GIRAAVARU
+                          </option>
+                          <option value="49">
+                            FURAVERI ISLAND RESORT &amp; SPA
+                          </option>
+                          <option value="54">
+                            GRAND PARK KODHIPPARU MALDIVES
+                          </option>
+                          <option value="55">HARD ROCK HOTEL MALDIVES</option>
+                          <option value="57">HERITANCE AARAH</option>
+                          <option value="58">
+                            HIDEAWAY BEACH RESORT &amp; SPA
+                          </option>
+                          <option value="150">HILLSIDE BEACH CLUB</option>
+                          <option value="100">
+                            HILTON DUBAI JUMEIRAH BEACH
+                          </option>
+                          <option value="101">
+                            HILTON DUBAI PALM JUMEIRAH
+                          </option>
+                          <option value="103">HILTON DUBAI THE WALK</option>
+                          <option value="93">
+                            HILTON MALDIVES AMINGIRI RESORT &amp; SPA
+                          </option>
+                          <option value="157">HOTEL LE RECIF</option>
+                          <option value="60">HURAWALHI ISLAND RESORT</option>
+                          <option value="61">HUVAFEN FUSHI MALDIVES</option>
+                          <option value="51">IFURU ISLAND MALDIVES</option>
+                          <option value="156">ILE DES DEUX COCOS</option>
+                          <option value="52">
+                            INTERCONTINENTAL MALDIVES MAAMUNAGAU RESORT
+                          </option>
+                          <option value="10">JA MANAFARU</option>
+                          <option value="59">JAWAKARA ISLANDS MALDIVES</option>
+                          <option value="41">JOALI BEING</option>
+                          <option value="44">JOALI MALDIVES</option>
+                          <option value="45">JOY ISLAND</option>
+                          <option value="48">JUMEIRAH MALDIVES</option>
+                          <option value="159">
+                            JW MARRIOTT KAAFU ATOLL ISLAND RESORT
+                          </option>
+                          <option value="66">
+                            JW MARRIOTT MALDIVES RESORT &amp; SPA
+                          </option>
+                          <option value="76">KAGI MALDIVES SPA ISLAND</option>
+                          <option value="176">KANDOLHU MALDIVES</option>
+                          <option value="77">
+                            KUDA VILLINGILI RESORT MALDIVES
+                          </option>
+                          <option value="50">
+                            KUDADOO MALDIVES PRIVATE ISLAND
+                          </option>
+                          <option value="53">KURAMATHI MALDIVES</option>
+                          <option value="40">
+                            KUREDHIVARU RESORT AND SPA (ex.MOVENPICK RESORT
+                            KUREDHIVARU MALDIVES)
+                          </option>
+                          <option value="160">LA CIGALE ESTATE</option>
+                          <option value="126">LE MERIDIEN ILE MAURICE</option>
+                          <option value="62">
+                            LE MERIDIEN MALDIVES RESORT &amp; SPA
+                          </option>
+                          <option value="154">
+                            LE MERIDIEN NIRVANA ADULTS ONLY
+                          </option>
+                          <option value="119">LUX* BELLE MARE</option>
+                          <option value="117">LUX* GRAND BAIE</option>
+                          <option value="120">LUX* GRAND GAUBE</option>
+                          <option value="123">LUX* LE MORNE</option>
+                          <option value="128">LUX* MARIJANI ZANZIBAR</option>
+                          <option value="158">LUX* SAINT GILLES</option>
+                          <option value="39">
+                            LUX* SOUTH ARI ATOLL RESORT &amp; VILLAS
+                          </option>
+                          <option value="108">MADIFUSHI PRIVATE ISLAND</option>
+                          <option value="162">
+                            MANDARIN ORIENTAL JUMEIRA DUBAI
+                          </option>
+                          <option value="169">MANDARIN ORIENTAL MUSCAT</option>
+                          <option value="132">MANGO HOUSE SEYCHELLES</option>
+                          <option value="111">
+                            MAURICIA BEACHCOMBER RESORT &amp; SPA
+                          </option>
+                          <option value="14">MILAIDHOO ISLAND MALDIVES</option>
+                          <option value="42">
+                            NALADHU PRIVATE ISLAND MALDIVES
+                          </option>
+                          <option value="98">
+                            NH COLLECTION DUBAI THE PALM
+                          </option>
+                          <option value="174">
+                            NH COLLECTION MALDIVES HAVODDA RESORT
+                          </option>
+                          <option value="19">
+                            NH MALDIVES KUDA RAH RESORT (EX. AMAYA RESORT KUDA
+                            RAH)
+                          </option>
+                          <option value="105">
+                            NIKKI BEACH RESORT &amp; SPA DUBAI
+                          </option>
+                          <option value="43">
+                            NIYAMA PRIVATE ISLANDS MALDIVES
+                          </option>
+                          <option value="46">NOOE MALDIVES KUNAAVASHI</option>
+                          <option value="125">
+                            NUJUMA, A RITZ-CARLTON RESERVE
+                          </option>
+                          <option value="152">
+                            ONE&amp;ONLY AESTHESIS ATHENS
+                          </option>
+                          <option value="147">ONE&amp;ONLY DESARU COAST</option>
+                          <option value="153">ONE&amp;ONLY KEA ISLAND</option>
+                          <option value="124">
+                            ONE&amp;ONLY LE SAINT GERAN
+                          </option>
+                          <option value="151">ONE&amp;ONLY PORTONOVI</option>
+                          <option value="13">ONE&amp;ONLY REETHI RAH</option>
+                          <option value="140">ONE&amp;ONLY ROYAL MIRAGE</option>
+                          <option value="47">
+                            OUTRIGGER MALDIVES MAAFUSHIVARU RESORT
+                          </option>
+                          <option value="4">OZEN LIFE MAADHOO</option>
+                          <option value="5">OZEN RESERVE BOLIFUSHI</option>
+                          <option value="112">
+                            PARADIS BEACHCOMBER GOLF RESORT &amp; SPA
+                          </option>
+                          <option value="142">
+                            PARK HYATT ABU DHABI HOTEL AND VILLAS
+                          </option>
+                          <option value="56">
+                            PARK HYATT MALDIVES HADAHAA
+                          </option>
+                          <option value="65">PATINA MALDIVES</option>
+                          <option value="164">
+                            PRACTICUM RESORT &amp; SPA
+                          </option>
+                          <option value="95">RAAYA BY ATMOSPHERE</option>
+                          <option value="9">
+                            RADISSON BLU RESORT MALDIVES
+                          </option>
+                          <option value="84">RAFFLES MALDIVES MERADHOO</option>
+                          <option value="155">RAFFLES THE PALM DUBAI</option>
+                          <option value="87">REETHI FARU RESORT</option>
+                          <option value="173">RIXOS MARINA ABU DHABI</option>
+                          <option value="136">RIXOS PREMIUM DUBAI</option>
+                          <option value="107">
+                            RIXOS PREMIUM SAADIYAT ISLAND
+                          </option>
+                          <option value="137">
+                            RIXOS THE PALM DUBAI HOTEL &amp; SUITES
+                          </option>
+                          <option value="88">ROBINSON CLUB MALDIVES</option>
+                          <option value="89">ROBINSON CLUB NOONU</option>
+                          <option value="113">
+                            ROYAL PALM BEACHCOMBER LUXURY
+                          </option>
+                          <option value="118">
+                            SAADIYAT ROTANA RESORT &amp; VILLAS
+                          </option>
+                          <option value="68">SAII LAGOON MALDIVES</option>
+                          <option value="134">
+                            SALT OF PALMAR, AN ADULT-ONLY BOUTIQUE HOTEL
+                          </option>
+                          <option value="69">SANDIES BATHALA</option>
+                          <option value="114">
+                            SHANDRANI BEACHCOMBER RESORT &amp; SPA
+                          </option>
+                          <option value="161">SIRO BOKA PLACE</option>
+                          <option value="35">SIRRU FEN FUSHI</option>
+                          <option value="16">SIX SENSES KANUHURA</option>
+                          <option value="130">SIX SENSES KRABEY ISLAND</option>
+                          <option value="70">SIX SENSES LAAMU</option>
+                          <option value="146">SIX SENSES ZIGHY BAY</option>
+                          <option value="148">SIX SENSES ZIL PASYON</option>
+                          <option value="71">SO/ MALDIVES</option>
+                          <option value="2">SONEVA FUSHI</option>
+                          <option value="72">SONEVA JANI</option>
+                          <option value="129">SONEVA KIRI</option>
+                          <option value="73">SONEVA SECRET</option>
+                          <option value="74">
+                            TAJ CORAL REEF RESORT &amp; SPA
+                          </option>
+                          <option value="75">
+                            TAJ EXOTICA RESORT &amp; SPA
+                          </option>
+                          <option value="135">TAMASSA BEL OMBRE</option>
+                          <option value="171">TEST KATYA</option>
+                          <option value="131">
+                            THE MORA LUXURY RESORT ZANZIBAR
+                          </option>
+                          <option value="78">
+                            THE NAUTILUS BEACH &amp; OCEAN HOUSES
+                          </option>
+                          <option value="79">
+                            THE RESIDENCE MALDIVES AT FALHUMAAFUSHI
+                          </option>
+                          <option value="17">
+                            THE RESIDENCE MALDIVES, DHIGURAH
+                          </option>
+                          <option value="166">THE RITZ-CARLTON DUBAI</option>
+                          <option value="80">
+                            THE RITZ-CARLTON MALDIVES, FARI ISLANDS
+                          </option>
+                          <option value="8">
+                            THE ST. REGIS MALDIVES VOMMULI RESORT
+                          </option>
+                          <option value="121">
+                            THE ST. REGIS RED SEA RESORT
+                          </option>
+                          <option value="122">
+                            THE ST.REGIS LE MORNE RESORT, MAURITIUS (EX. JW
+                            MARRIOTT MAURITIUS)
+                          </option>
+                          <option value="81">
+                            THE STANDARD, HURUVALHI MALDIVES
+                          </option>
+                          <option value="144">
+                            THE WESTIN TURTLE BAY RESORT &amp; SPA
+                          </option>
+                          <option value="115">
+                            TROU AUX BICHES BEACHCOMBER GOLF RESORT &amp; SPA
+                          </option>
+                          <option value="82">VAKKARU MALDIVES</option>
+                          <option value="15">
+                            VELAA PRIVATE ISLAND MALDIVES
+                          </option>
+                          <option value="83">VELASSARU MALDIVES</option>
+                          <option value="94">VELIGANDU</option>
+                          <option value="116">
+                            VICTORIA BEACHCOMBER RESORT &amp; SPA
+                          </option>
+                          <option value="90">W MALDIVES</option>
+                          <option value="92">
+                            WALDORF ASTORIA MALDIVES ITHAAFUSHI
+                          </option>
+                          <option value="145">
+                            WALDORF ASTORIA SEYCHELLES
+                          </option>
+                          <option value="91">
+                            YOU &amp; ME BY COCOON MALDIVES
+                          </option></select
+                        ><span
+                          class="select2 select2-container select2-container--default"
+                          dir="ltr"
+                          data-select2-id="2"
+                          style="width: 756px"
+                          ><span class="selection"
+                            ><span
+                              class="select2-selection select2-selection--single"
+                              role="combobox"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                              tabindex="0"
+                              aria-disabled="false"
+                              aria-labelledby="select2-hotel-kg-container"
+                              ><span
+                                class="select2-selection__rendered"
+                                id="select2-hotel-kg-container"
+                                role="textbox"
+                                aria-readonly="true"
+                                title="-"
+                                >-</span
+                              ><span
+                                class="select2-selection__arrow"
+                                role="presentation"
+                                ><b role="presentation"></b></span></span></span
+                          ><span
+                            class="dropdown-wrapper"
+                            aria-hidden="true"
+                          ></span
+                        ></span>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-form-label col-xl-4"
+                        >Room category</label
+                      >
+                      <div class="col-xl-8">
+                        <select
+                          multiple=""
+                          class="form-control room_types select2-hidden-accessible"
+                          name="room_types[]"
+                          data-select2-id="10"
+                          tabindex="-1"
+                          aria-hidden="true"
+                        ></select
+                        ><span
+                          class="select2 select2-container select2-container--default"
+                          dir="ltr"
+                          data-select2-id="11"
+                          style="width: 756px"
+                          ><span class="selection"
+                            ><span
+                              class="select2-selection select2-selection--multiple"
+                              role="combobox"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                              tabindex="-1"
+                              aria-disabled="false"
+                              ><ul class="select2-selection__rendered">
+                                <li
+                                  class="select2-search select2-search--inline"
+                                >
+                                  <input
+                                    class="select2-search__field"
+                                    type="search"
+                                    tabindex="0"
+                                    autocomplete="off"
+                                    autocorrect="off"
+                                    autocapitalize="none"
+                                    spellcheck="false"
+                                    role="searchbox"
+                                    aria-autocomplete="list"
+                                    placeholder=""
+                                    style="width: 0.75em"
+                                  />
+                                </li></ul></span></span
+                          ><span
+                            class="dropdown-wrapper"
+                            aria-hidden="true"
+                          ></span
+                        ></span>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-form-label col-xl-4">Meal plan</label>
+                      <div class="col-xl-8">
+                        <select
+                          multiple=""
+                          class="form-control meal_planes select2-hidden-accessible"
+                          name="meal_planes[]"
+                          data-select2-id="12"
+                          tabindex="-1"
+                          aria-hidden="true"
+                        ></select
+                        ><span
+                          class="select2 select2-container select2-container--default"
+                          dir="ltr"
+                          data-select2-id="13"
+                          style="width: 756px"
+                          ><span class="selection"
+                            ><span
+                              class="select2-selection select2-selection--multiple"
+                              role="combobox"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                              tabindex="-1"
+                              aria-disabled="false"
+                              ><ul class="select2-selection__rendered">
+                                <li
+                                  class="select2-search select2-search--inline"
+                                >
+                                  <input
+                                    class="select2-search__field"
+                                    type="search"
+                                    tabindex="0"
+                                    autocomplete="off"
+                                    autocorrect="off"
+                                    autocapitalize="none"
+                                    spellcheck="false"
+                                    role="searchbox"
+                                    aria-autocomplete="list"
+                                    placeholder=""
+                                    style="width: 0.75em"
+                                  />
+                                </li></ul></span></span
+                          ><span
+                            class="dropdown-wrapper"
+                            aria-hidden="true"
+                          ></span
+                        ></span>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-form-label col-xl-4"
+                        >Beverage package</label
+                      >
+                      <div class="col-xl-8">
+                        <select
+                          multiple=""
+                          class="form-control beverages select2-hidden-accessible"
+                          name="beverages[]"
+                          data-select2-id="14"
+                          tabindex="-1"
+                          aria-hidden="true"
+                        ></select
+                        ><span
+                          class="select2 select2-container select2-container--default"
+                          dir="ltr"
+                          data-select2-id="15"
+                          style="width: 756px"
+                          ><span class="selection"
+                            ><span
+                              class="select2-selection select2-selection--multiple"
+                              role="combobox"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                              tabindex="-1"
+                              aria-disabled="false"
+                              ><ul class="select2-selection__rendered">
+                                <li
+                                  class="select2-search select2-search--inline"
+                                >
+                                  <input
+                                    class="select2-search__field"
+                                    type="search"
+                                    tabindex="0"
+                                    autocomplete="off"
+                                    autocorrect="off"
+                                    autocapitalize="none"
+                                    spellcheck="false"
+                                    role="searchbox"
+                                    aria-autocomplete="list"
+                                    placeholder=""
+                                    style="width: 0.75em"
+                                  />
+                                </li></ul></span></span
+                          ><span
+                            class="dropdown-wrapper"
+                            aria-hidden="true"
+                          ></span
+                        ></span>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-form-label col-xl-4">Bedrooms</label>
+                      <div class="col-xl-8">
+                        <select
+                          class="form-control bedroom_count"
+                          name="bedroom_count"
+                        >
+                          <option value="" selected="selected">-</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div
+                      class="form-group row bedroom_types_container"
+                      style="display: none"
+                    >
+                      <label class="col-form-label col-xl-4"
+                        >Bedroom type</label
+                      >
+                      <div class="col-xl-8">
+                        <select
+                          class="form-control bedroom_types select2-hidden-accessible"
+                          multiple=""
+                          name="bedroom_types[]"
+                          data-select2-id="16"
+                          tabindex="-1"
+                          aria-hidden="true"
+                          disabled=""
+                        ></select
+                        ><span
+                          class="select2 select2-container select2-container--default select2-container--disabled"
+                          dir="ltr"
+                          data-select2-id="17"
+                          style="width: auto"
+                          ><span class="selection"
+                            ><span
+                              class="select2-selection select2-selection--multiple"
+                              role="combobox"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                              tabindex="-1"
+                              aria-disabled="true"
+                              ><ul class="select2-selection__rendered">
+                                <li
+                                  class="select2-search select2-search--inline"
+                                >
+                                  <input
+                                    class="select2-search__field"
+                                    type="search"
+                                    tabindex="0"
+                                    autocomplete="off"
+                                    autocorrect="off"
+                                    autocapitalize="none"
+                                    spellcheck="false"
+                                    role="searchbox"
+                                    aria-autocomplete="list"
+                                    placeholder=""
+                                    disabled=""
+                                    style="width: 0.75em"
+                                  />
+                                </li></ul></span></span
+                          ><span
+                            class="dropdown-wrapper"
+                            aria-hidden="true"
+                          ></span
+                        ></span>
+                      </div>
+                    </div>
+
+                    <div class="form-group row" style="display: none">
+                      <label class="col-form-label col-xl-4">Rooms</label>
+                      <div class="col-xl-8">
+                        <select
+                          class="form-control room_count"
+                          name="room_count"
+                        >
+                          <option value="1" selected="selected">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <div class="col-lg-4">
+                  <fieldset>
+                    <legend>Transfer</legend>
+
+                    <div class="form-group row">
+                      <label class="col-form-label col-xl-4"
+                        >Transfer mode</label
+                      >
+                      <div class="col-xl-8">
+                        <select
+                          multiple=""
+                          class="form-control transfer_ids select2-hidden-accessible"
+                          name="transfer_ids[]"
+                          data-select2-id="18"
+                          tabindex="-1"
+                          aria-hidden="true"
+                        >
+                          <option value="1">SpeedBoat</option>
+                          <option value="2">SeaPlane</option>
+                          <option value="3">Domestic</option>
+                          <option value="4">Car</option>
+                          <option value="5">Helicopter</option>
+                          <option value="7">
+                            Domestic flight + Speedboat
+                          </option></select
+                        ><span
+                          class="select2 select2-container select2-container--default"
+                          dir="ltr"
+                          data-select2-id="19"
+                          style="width: 756px"
+                          ><span class="selection"
+                            ><span
+                              class="select2-selection select2-selection--multiple"
+                              role="combobox"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                              tabindex="-1"
+                              aria-disabled="false"
+                              ><ul class="select2-selection__rendered">
+                                <li
+                                  class="select2-search select2-search--inline"
+                                >
+                                  <input
+                                    class="select2-search__field"
+                                    type="search"
+                                    tabindex="0"
+                                    autocomplete="off"
+                                    autocorrect="off"
+                                    autocapitalize="none"
+                                    spellcheck="false"
+                                    role="searchbox"
+                                    aria-autocomplete="list"
+                                    placeholder=""
+                                    style="width: 0.75em"
+                                  />
+                                </li></ul></span></span
+                          ><span
+                            class="dropdown-wrapper"
+                            aria-hidden="true"
+                          ></span
+                        ></span>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-form-label col-xl-4"
+                        >Transfer type</label
+                      >
+                      <div class="col-xl-8">
+                        <select
+                          class="form-control transfer_direction"
+                          name="transfer_direction"
+                        >
+                          <option value="round" selected="selected">
+                            Round trip
+                          </option>
+                          <option value="one">One way Airport - Hotel</option>
+                          <option value="back">One way Hotel - Airport</option>
+                          <option value="none">No transfer</option>
+                        </select>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <input type="hidden" name="deal_id" value="" />
+              </div>
+
+              <div class="form-group">
+                <button type="submit" class="btn btn-rollback-tag btn-info">
+                  Search
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

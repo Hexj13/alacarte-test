@@ -1,0 +1,6325 @@
+<div class="search-result">
+  <form
+    method="GET"
+    action="https://pre.alacarte.ae/contract-search"
+    accept-charset="UTF-8"
+    id="filter_form"
+  >
+    <input name="price" type="hidden" value="net" />
+    <input name="since" type="hidden" value="23.08.2025" />
+    <input name="until" type="hidden" value="29.08.2025" />
+    <input name="nights" type="hidden" value="6" />
+    <input name="nationality_id" type="hidden" value="184" />
+    <input name="rooms[1][adults]" type="hidden" value="8" />
+    <input name="rooms[1][children]" type="hidden" value="7" />
+    <input name="rooms[1][children_ages][0]" type="hidden" value="5" />
+    <input name="rooms[1][children_ages][1]" type="hidden" value="5" />
+    <input name="rooms[1][children_ages][2]" type="hidden" value="5" />
+    <input name="rooms[1][children_ages][3]" type="hidden" value="5" />
+    <input name="rooms[1][children_ages][4]" type="hidden" value="5" />
+    <input name="rooms[1][children_ages][5]" type="hidden" value="5" />
+    <input name="rooms[1][children_ages][6]" type="hidden" value="5" />
+    <input name="rooms[2][adults]" type="hidden" value="1" />
+    <input name="rooms[2][children]" type="hidden" value="0" />
+    <input name="rooms[3][adults]" type="hidden" value="1" />
+    <input name="rooms[3][children]" type="hidden" value="0" />
+    <input name="hotel" type="hidden" value="21" />
+    <input name="meal_planes[0]" type="hidden" value="FB" />
+    <input name="beverages[0]" type="hidden" value="GOLD BEVERAGE PACKAGE" />
+    <input name="bedroom_count" type="hidden" value="4" />
+    <input name="room_count" type="hidden" value="1" />
+    <input name="transfer_direction" type="hidden" value="round" />
+    <input name="sort" type="hidden" value="_lft" />
+    <input name="direction" type="hidden" value="asc" />
+
+    <div class="mb-4">
+      <div style="vertical-align: middle" class="mb-1">
+        <span
+          style="
+            display: inline-block;
+            background: #5acc8e;
+            border: 0.3px solid #000000;
+            width: 39px;
+            height: 9px;
+            margin-right: 12px;
+          "
+        ></span>
+        <span>Availability and price guaranteed</span>
+      </div>
+      <div style="vertical-align: middle" class="mb-1">
+        <span
+          style="
+            display: inline-block;
+            background: white;
+            border: 0.3px solid #000000;
+            width: 39px;
+            height: 9px;
+            margin-right: 12px;
+          "
+        ></span>
+        <span>Availability on request, price guaranteed</span>
+      </div>
+      <div style="vertical-align: middle" class="mb-1">
+        <span
+          style="
+            display: inline-block;
+            background: #fdffa0;
+            border: 0.3px solid #000000;
+            width: 39px;
+            height: 9px;
+            margin-right: 12px;
+          "
+        ></span>
+        <span
+          >Availability on request, price guaranteed less than 48 hours</span
+        >
+      </div>
+      <div style="vertical-align: middle" class="mb-1">
+        <span
+          style="
+            display: inline-block;
+            background: #c6c5c5;
+            border: 0.3px solid #000000;
+            width: 39px;
+            height: 9px;
+            margin-right: 12px;
+          "
+        ></span>
+        <span>Availability and price on request</span>
+      </div>
+      <div style="vertical-align: middle" class="mb-1">
+        <span
+          style="
+            display: inline-block;
+            background: #ffb0b0;
+            border: 0.3px solid #000000;
+            width: 39px;
+            height: 9px;
+            margin-right: 12px;
+          "
+        ></span>
+        <span>No availability and price</span>
+      </div>
+    </div>
+
+    <div class="row align-items-center mb-4">
+      <div class="col-auto font-weight-bold">Availability:</div>
+      <div class="col-md-6">
+        <select
+          class="form-control select2-multiselect select2-hidden-accessible"
+          multiple=""
+          name="status[]"
+          data-select2-id="24"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <option value="0">Availability and price guaranteed</option>
+          <option value="1">Availability on request, price guaranted</option>
+          <option value="2">Availability and price on request</option>
+          <option value="3">No availability and price</option>
+          <option value="4">
+            Availability on request, price guaranted less than 48 hours
+          </option></select
+        ><span
+          class="select2 select2-container select2-container--default"
+          dir="ltr"
+          data-select2-id="25"
+          style="width: 784.5px"
+          ><span class="selection"
+            ><span
+              class="select2-selection select2-selection--multiple"
+              role="combobox"
+              aria-haspopup="true"
+              aria-expanded="false"
+              tabindex="-1"
+              aria-disabled="false"
+              ><ul class="select2-selection__rendered">
+                <li class="select2-search select2-search--inline">
+                  <input
+                    class="select2-search__field"
+                    type="search"
+                    tabindex="0"
+                    autocomplete="off"
+                    autocorrect="off"
+                    autocapitalize="none"
+                    spellcheck="false"
+                    role="searchbox"
+                    aria-autocomplete="list"
+                    placeholder="Select"
+                    style="width: 770.5px"
+                  />
+                </li></ul></span></span
+          ><span class="dropdown-wrapper" aria-hidden="true"></span
+        ></span>
+      </div>
+    </div>
+  </form>
+
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <tbody>
+        <tr>
+          <th>Period</th>
+          <th>Hotel</th>
+          <th>
+            Room category <br /><br />
+
+            Details
+          </th>
+          <th>Meal plan</th>
+          <th>Availability</th>
+          <th>Price type</th>
+          <th>SPO validity period</th>
+          <th>Price (NET)</th>
+          <th>Policies</th>
+        </tr>
+        <tr
+          style="
+            background-color: white;
+            color: black;
+            border: 1px solid #ced4da;
+          "
+        >
+          <td>
+            <span class="text-nowrap">23 Aug 2025 (Sat) - </span>
+            <span class="text-nowrap">29 Aug 2025 (Fri)</span>
+          </td>
+          <td>ANANTARA KIHAVAH MALDIVES VILLAS</td>
+
+          <td>
+            Four Bedroom Beach Pool Residence
+            <div>8 AD 7 CHD</div>
+            <div>SeaPlane (shared, RT Airport - Hotel - Airport)</div>
+          </td>
+          <td>FB + GOLD BEVERAGE PACKAGE</td>
+          <td style="position: relative">
+            <!-- {
+"contract_id": 124,
+"hotel_id": 21,
+"currency": "USD",
+"type": "Four Bedroom Beach Pool Residence",
+"type_id": 186,
+"room_count": 4,
+"meal_base": "BB",
+"meal": "FB",
+"meal_code": "14",
+"meal_type_uid": "uid-jq3spu1gqq17w-k1gijob11",
+"acc": {
+"adl": 8,
+"chl": [],
+"inf": [],
+"chl_adl": null,
+"max": {
+"adl": 12,
+"chl": [
+5,
+5,
+5,
+null
+],
+"inf": []
+},
+"add": {
+"adl": 0,
+"chl": [
+5,
+5,
+5,
+5,
+5,
+5,
+5
+],
+"inf": [],
+"free": 7,
+"free_indexes": [
+"Child"
+],
+"chl_indexes": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_indexes": []
+},
+"cur": {
+"adl": 8,
+"chl": [
+5,
+5,
+5
+],
+"inf": [],
+"chl_adl": [
+5,
+5,
+5,
+5
+],
+"chl_indexes": [
+0,
+0,
+0
+],
+"inf_indexes": [],
+"chl_adl_indexes": [
+0,
+0,
+0,
+0
+]
+},
+"meal": {
+"adl": 8,
+"chl": [
+5,
+5,
+5,
+5,
+5,
+5,
+5
+],
+"chl_indexes": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+"transfer": {
+"adl": 8,
+"chl": [
+5,
+5,
+5,
+5,
+5,
+5,
+5
+],
+"chl_indexes": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+}
+},
+"accommodation": {
+"baseSlots": {
+"slots": [
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+}
+]
+},
+"maxSlots": {
+"slots": [
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": 11,
+"minAge": 2,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": 11,
+"minAge": 2,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": 11,
+"minAge": 2,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": 11,
+"minAge": 2,
+"slotOptions": [],
+"pax": false,
+"type": 0,
+"age": null,
+"index": null,
+"options": []
+}
+]
+},
+"base": {
+"contractId": 124,
+"type": 1,
+"adt": 8,
+"chd": []
+},
+"additional": {
+"contractId": 124,
+"type": 1,
+"adt": 0,
+"chd": [
+{
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"age": 5,
+"index": 0,
+"options": []
+}
+]
+},
+"bedEffect": false,
+"additionalBedByChildIndex": [
+null,
+null
+]
+},
+"basePrice": 63000,
+"firstDayBasePrice": 10500,
+"basePrices": [
+10500,
+10500,
+10500,
+10500,
+10500,
+10500
+],
+"add": {
+"adl": 0,
+"chl": [],
+"price": 0,
+"items": [
+{
+"num": 0,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 1,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 2,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 3,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 4,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 5,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 6,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+}
+]
+},
+"add_meal_price": 11040,
+"meal_items": [
+{
+"name": "AD",
+"count": 8,
+"age": -1,
+"price": 230,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 0,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 1,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 2,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 3,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 4,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 5,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 6,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+}
+],
+"meal_prices": {
+"adl": 1380,
+"chl": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"nights": [
+{
+"adt": 230,
+"chd": [
+"0",
+"0"
+],
+"price": 1840,
+"adt_prices": [
+230,
+230,
+230,
+230,
+230,
+230,
+230,
+230
+],
+"chd_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+{
+"adt": 230,
+"chd": [
+"0",
+"0"
+],
+"price": 1840,
+"adt_prices": [
+230,
+230,
+230,
+230,
+230,
+230,
+230,
+230
+],
+"chd_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+{
+"adt": 230,
+"chd": [
+"0",
+"0"
+],
+"price": 1840,
+"adt_prices": [
+230,
+230,
+230,
+230,
+230,
+230,
+230,
+230
+],
+"chd_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+{
+"adt": 230,
+"chd": [
+"0",
+"0"
+],
+"price": 1840,
+"adt_prices": [
+230,
+230,
+230,
+230,
+230,
+230,
+230,
+230
+],
+"chd_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+{
+"adt": 230,
+"chd": [
+"0",
+"0"
+],
+"price": 1840,
+"adt_prices": [
+230,
+230,
+230,
+230,
+230,
+230,
+230,
+230
+],
+"chd_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+{
+"adt": 230,
+"chd": [
+"0",
+"0"
+],
+"price": 1840,
+"adt_prices": [
+230,
+230,
+230,
+230,
+230,
+230,
+230,
+230
+],
+"chd_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+}
+]
+},
+"nights": 6,
+"add_nights": [
+{
+"adl": 300,
+"chls": [
+"0",
+"0"
+],
+"price": 0,
+"adt_prices": [],
+"chl_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_prices": []
+},
+{
+"adl": 300,
+"chls": [
+"0",
+"0"
+],
+"price": 0,
+"adt_prices": [],
+"chl_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_prices": []
+},
+{
+"adl": 300,
+"chls": [
+"0",
+"0"
+],
+"price": 0,
+"adt_prices": [],
+"chl_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_prices": []
+},
+{
+"adl": 300,
+"chls": [
+"0",
+"0"
+],
+"price": 0,
+"adt_prices": [],
+"chl_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_prices": []
+},
+{
+"adl": 300,
+"chls": [
+"0",
+"0"
+],
+"price": 0,
+"adt_prices": [],
+"chl_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_prices": []
+},
+{
+"adl": 300,
+"chls": [
+"0",
+"0"
+],
+"price": 0,
+"adt_prices": [],
+"chl_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_prices": []
+}
+],
+"periods": [
+{
+"since": "2025-05-01",
+"until": "2025-10-15",
+"sinceCut": "2025-08-23",
+"untilCut": "2025-08-29",
+"nights": 6,
+"seasonIndex": 1,
+"season": "Low",
+"seasonUid": "uid-1738130214701-vn10lqvud",
+"price": 10500
+}
+],
+"seasonIndex": 1,
+"seasonNames": [
+"High",
+"Low",
+"Shoulder",
+"Peak"
+],
+"since": "2025-08-23",
+"until": "2025-08-29",
+"bad": [],
+"price": 94621,
+"cancellations": [
+{
+"from": "0",
+"to": "7",
+"type": "percent",
+"fee": "100",
+"since": "2025-08-22",
+"until": "2025-08-23"
+}
+],
+"payments": [
+{
+"to": "21",
+"since": "2025-08-22",
+"percent": "100"
+}
+],
+"deposits": [],
+"min_nights": 0,
+"taxes": [
+{
+"name": "Green Tax",
+"included": 288,
+"type": "fix",
+"value": "6",
+"age": "2",
+"price": 540,
+"free_night_child_not_charged": null,
+"free_night_adt_not_charged": null,
+"people": 15,
+"people_free_nights": [
+6,
+6,
+6,
+6,
+6,
+6,
+6
+],
+"since": "2025-08-23",
+"nights": 6,
+"included_people": 8
+},
+{
+"name": "Green Tax",
+"included": false,
+"type": "fix",
+"value": "6",
+"age": "2",
+"price": 540,
+"free_night_child_not_charged": null,
+"free_night_adt_not_charged": null,
+"people": 15,
+"people_free_nights": [
+6,
+6,
+6,
+6,
+6,
+6,
+6
+],
+"since": "2025-08-23",
+"nights": 6
+}
+],
+"key": "b792e13ddeb8664bdad9f9be1a4ca028",
+"transfer": "SeaPlane (shared, RT Airport - Hotel - Airport)",
+"transfer_id": 2,
+"transfer_type": "regular",
+"transfer_direction": "round",
+"transfers": [
+{
+"name": "Shared Seaplane Airport - Hotel",
+"id": 2,
+"direction": "one",
+"type": "regular",
+"max_people": null,
+"seasons_prices": [
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+},
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+},
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+},
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+}
+],
+"date_type": "season",
+"dates_prices": [],
+"max_people_free": null,
+"by_week_days": false,
+"week_days": {
+"1d": false,
+"2d": false,
+"3d": false,
+"4d": false,
+"5d": false,
+"6d": false,
+"7d": false
+},
+"transfer_not_required": false,
+"items": [
+{
+"name": "AD",
+"price": "425",
+"count": 8
+},
+{
+"name": "Child",
+"price": "212.5",
+"count": 7
+}
+],
+"uid": "uid-1738130217871-36qof41gg",
+"room_types": [
+null
+],
+"info": null,
+"price": 4887.5,
+"arrival": "2025-08-23",
+"departure": null,
+"policies": [
+{
+"to": {
+"baggage": "30",
+"excess_cost": "6",
+"luggage": "5",
+"transport_time_since": "09:00",
+"transport_time_until": "16:00",
+"transport_tz": "Indian\/Maldives",
+"type": "season",
+"route": "to"
+}
+}
+]
+},
+{
+"name": "Shared Seaplane Hotel - Airport",
+"id": 2,
+"direction": "back",
+"type": "regular",
+"max_people": null,
+"seasons_prices": [
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+},
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+},
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+},
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+}
+],
+"date_type": "season",
+"dates_prices": [],
+"max_people_free": null,
+"by_week_days": false,
+"week_days": {
+"1d": false,
+"2d": false,
+"3d": false,
+"4d": false,
+"5d": false,
+"6d": false,
+"7d": false
+},
+"transfer_not_required": false,
+"items": [
+{
+"name": "AD",
+"price": "425",
+"count": 8
+},
+{
+"name": "Child",
+"price": "212.5",
+"count": 7
+}
+],
+"uid": "uid-1738130217871-yx4rmur88",
+"room_types": [
+null
+],
+"info": null,
+"price": 4887.5,
+"arrival": null,
+"departure": "2025-08-29",
+"policies": [
+{
+"from": {
+"baggage": "30",
+"excess_cost": "6",
+"luggage": "5",
+"transport_time_until": "09:00",
+"transport_tz": "Indian\/Maldives",
+"type": "season",
+"route": "from"
+}
+}
+]
+}
+],
+"transfer_key": "SeaPlane (shared, RT Airport - Hotel - Airport)",
+"transfer_complete": true,
+"spo": {
+"id": 3061,
+"code": "BEST OF MALDIVES 2025",
+"ids": [
+3061
+],
+"spoGroupKey": "3061",
+"items": [
+{
+"group": "meal",
+"name": "AD BB -> HB (0 USD)",
+"code": "BEST OF MALDIVES 2025",
+"type": "meal_plan",
+"nights": 6,
+"count": 8,
+"discount": 7200,
+"price": null,
+"value": null,
+"since": "2025-08-23",
+"until": "2025-08-29",
+"text": null,
+"stayDates": null,
+"context": null
+},
+{
+"group": "meal",
+"name": "Child BB -> HB (0 USD)",
+"code": "BEST OF MALDIVES 2025",
+"type": "meal_plan",
+"nights": 6,
+"count": 7,
+"discount": 0,
+"price": null,
+"value": null,
+"since": "2025-08-23",
+"until": "2025-08-29",
+"text": null,
+"stayDates": null,
+"context": null
+}
+],
+"discount": 7200,
+"price": 0,
+"room_type": null,
+"acc_discount": 0,
+"acc_ex_discount": 0,
+"meal_discount": 0,
+"basePrices": [],
+"basePricesForDiscount": null,
+"meal_prices": [
+640,
+640,
+640,
+640,
+640,
+640
+],
+"meal_prices_adt": [],
+"meal_prices_chd": [],
+"meal_prices_for_discount": null,
+"add_nights": [],
+"add_nights_for_discount": null,
+"add_nights_adt": [],
+"add_nights_chd": [],
+"add_nights_inf": [],
+"meal": null,
+"until": "2025-10-15",
+"status": 1,
+"transfers": null,
+"beveragePackages": null,
+"beveragePackage": null,
+"galaDinners": null,
+"ages": null,
+"meals_ages": null,
+"transfer_ages": null,
+"cancellations": [],
+"payments": [],
+"deposits": [],
+"blackOut": [],
+"repeatVisits": null,
+"nonrefundable_tariff": false,
+"spoStopSaleBlackDates": [],
+"unsetBad": [],
+"available_codes": [],
+"revisedAccommodation": null,
+"revisedStayDates": [],
+"revisedTaxes": null,
+"add_nights_adt_for_discount": null,
+"add_nights_chd_for_discount": null,
+"add_nights_inf_for_discount": null
+},
+"nextContract": null,
+"id": "b792e13ddeb8664bdad9f9be1a4ca028.-.3061.-",
+"status": 1,
+"galaDinners": [],
+"beveragePackages": [
+{
+"name": "NON-ALCOHOLIC BEVERAGE PACKAGE",
+"required": false,
+"meals": [
+"BB",
+"HB",
+"FB"
+],
+"dates": [
+{
+"range": {
+"since": "2025-01-11",
+"until": "2025-12-23"
+},
+"age_prices": [
+{
+    "v": "123"
+},
+{
+    "v": "0"
+}
+],
+"adt_price": "123"
+}
+],
+"uid": "uid-1744358835988-twd6bxdvp",
+"items": [
+{
+"name": "AD",
+"count": 8,
+"price": 738,
+"nights": 6,
+"since": "2025-08-23",
+"until": "2025-08-29"
+},
+{
+"name": "Child",
+"count": 7,
+"price": 738,
+"nights": 6,
+"since": "2025-08-23",
+"until": "2025-08-29"
+}
+],
+"price": 11070
+},
+{
+"name": "GOLD BEVERAGE PACKAGE",
+"required": false,
+"meals": [
+"BB",
+"HB",
+"FB"
+],
+"dates": [
+{
+"range": {
+"since": "2025-01-11",
+"until": "2025-12-23"
+},
+"age_prices": [
+{
+    "v": "123"
+},
+{
+    "v": "0"
+}
+],
+"adt_price": "251"
+}
+],
+"uid": "uid-1744358901078-izagaeu0d",
+"items": [
+{
+"name": "AD",
+"count": 8,
+"price": 1506,
+"nights": 6,
+"since": "2025-08-23",
+"until": "2025-08-29"
+},
+{
+"name": "Child",
+"count": 7,
+"price": 738,
+"nights": 6,
+"since": "2025-08-23",
+"until": "2025-08-29"
+}
+],
+"price": 17214
+},
+{
+"name": "PLATINUM BEVERAGE PACKAGE",
+"required": false,
+"meals": [
+"BB",
+"HB",
+"FB"
+],
+"dates": [
+{
+"range": {
+"since": "2025-01-11",
+"until": "2025-12-23"
+},
+"age_prices": [
+{
+    "v": "123"
+},
+{
+    "v": "0"
+}
+],
+"adt_price": "380"
+}
+],
+"uid": "uid-1744359009575-oezhu6tjs",
+"items": [
+{
+"name": "AD",
+"count": 8,
+"price": 2280,
+"nights": 6,
+"since": "2025-08-23",
+"until": "2025-08-29"
+},
+{
+"name": "Child",
+"count": 7,
+"price": 738,
+"nights": 6,
+"since": "2025-08-23",
+"until": "2025-08-29"
+}
+],
+"price": 23406
+}
+],
+"releasePeriods": [],
+"repeatVisits": null,
+"beveragePackageIndex": 1,
+"beveragePackageName": "GOLD BEVERAGE PACKAGE",
+"searchDate": "2025-08-22",
+"spoStopSale": null,
+"currencyConverted": null,
+"contractHotelStatus": {
+"states": [],
+"state": 1,
+"since": null,
+"stopSale": [],
+"stateDescriptions": []
+},
+"checkInTime": [],
+"festives": null,
+"spoGroups": null,
+"spoGroupsByMeal": null,
+"mealIndex": 2,
+"meal_items_exclude": [],
+"default_status": 1,
+"child_age_revised_transfers": null,
+"spoGroupsForGalaDinner": []
+} -->
+            Availability on request, price guaranted<br />
+
+            <div>
+              <a
+                data-href="https://pre.alacarte.ae/contract-search/sale-status?id=H4sIAAAAAAAAA4VPuw7DIAz8lcgzQeCkCawZOlddUQYI7kOiINHm%2FwtppXao1MG27nR31hnAjgvFUeAOGKD%2BAMVGZqCyv2dmRmI%2FF5MseJ%2FW3Ezkc0q3cu1yaQ4pheZI96unuFDVTMBMJwY5s7iG8LXAjRpJdt6TU8PQO2%2B9PmlH0vaLFajgpUMGmc5rsLnE5bRGD%2F%2B9vOX1KW9rwVKtFapFfCdCpAcwqYatr9jI%2BQn%2FJEX%2FFgEAAA%3D%3D&amp;spo=3061&amp;default_status=1"
+                type="button"
+                class="btn btn-secondary mt-1 sale_calendar"
+                ><i class="fa fa-calendar-alt"></i
+              ></a>
+            </div>
+          </td>
+
+          <td>
+            Contract Price and SPO
+            <div>BEST OF MALDIVES 2025</div>
+          </td>
+
+          <td>Till 15 Oct 2025</td>
+          <td>
+            <span class="contract-price"> 94 621.00 USD </span>
+            <br />
+            <a
+              target="_blank"
+              href="https://pre.alacarte.ae/contract-search/detail?id=H4sIAAAAAAAAA4VPuw7DIAz8lcgzQeCkCawZOlddUQYI7kOiINHm%2FwtppXao1MG27nR31hnAjgvFUeAOGKD%2BAMVGZqCyv2dmRmI%2FF5MseJ%2FW3Ezkc0q3cu1yaQ4pheZI96unuFDVTMBMJwY5s7iG8LXAjRpJdt6TU8PQO2%2B9PmlH0vaLFajgpUMGmc5rsLnE5bRGD%2F%2B9vOX1KW9rwVKtFapFfCdCpAcwqYatr9jI%2BQn%2FJEX%2FFgEAAA%3D%3D"
+            >
+              Select Quotation
+            </a>
+          </td>
+          <td>
+            <!-- Политики -->
+
+            Cancellation policy:<br />
+            <div>22 Aug 2025 - 23 Aug 2025 fee 100%</div>
+
+            Payment policy:<br />
+            <div>22 Aug 2025 - 100%</div>
+          </td>
+        </tr>
+        <tr
+          style="
+            background-color: white;
+            color: black;
+            border: 1px solid #ced4da;
+          "
+        >
+          <td>
+            <span class="text-nowrap">23 Aug 2025 (Sat) - </span>
+            <span class="text-nowrap">29 Aug 2025 (Fri)</span>
+          </td>
+          <td>ANANTARA KIHAVAH MALDIVES VILLAS</td>
+
+          <td>
+            Four Bedroom Beach Pool Residence
+            <div>8 AD 7 CHD</div>
+            <div>SeaPlane (shared, RT Airport - Hotel - Airport)</div>
+          </td>
+          <td>FB + GOLD BEVERAGE PACKAGE</td>
+          <td style="position: relative">
+            <!-- {
+"contract_id": 124,
+"hotel_id": 21,
+"currency": "USD",
+"type": "Four Bedroom Beach Pool Residence",
+"type_id": 186,
+"room_count": 4,
+"meal_base": "BB",
+"meal": "FB",
+"meal_code": "14",
+"meal_type_uid": "uid-jq3spu1gqq17w-k1gijob11",
+"acc": {
+"adl": 8,
+"chl": [],
+"inf": [],
+"chl_adl": null,
+"max": {
+"adl": 12,
+"chl": [
+5,
+5,
+5,
+null
+],
+"inf": []
+},
+"add": {
+"adl": 0,
+"chl": [
+5,
+5,
+5,
+5,
+5,
+5,
+5
+],
+"inf": [],
+"free": 7,
+"free_indexes": [
+"Child"
+],
+"chl_indexes": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_indexes": []
+},
+"cur": {
+"adl": 8,
+"chl": [
+5,
+5,
+5
+],
+"inf": [],
+"chl_adl": [
+5,
+5,
+5,
+5
+],
+"chl_indexes": [
+0,
+0,
+0
+],
+"inf_indexes": [],
+"chl_adl_indexes": [
+0,
+0,
+0,
+0
+]
+},
+"meal": {
+"adl": 8,
+"chl": [
+5,
+5,
+5,
+5,
+5,
+5,
+5
+],
+"chl_indexes": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+"transfer": {
+"adl": 8,
+"chl": [
+5,
+5,
+5,
+5,
+5,
+5,
+5
+],
+"chl_indexes": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+}
+},
+"accommodation": {
+"baseSlots": {
+"slots": [
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+}
+]
+},
+"maxSlots": {
+"slots": [
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": 11,
+"minAge": 2,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": 11,
+"minAge": 2,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": 11,
+"minAge": 2,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": 11,
+"minAge": 2,
+"slotOptions": [],
+"pax": false,
+"type": 0,
+"age": null,
+"index": null,
+"options": []
+}
+]
+},
+"base": {
+"contractId": 124,
+"type": 1,
+"adt": 8,
+"chd": []
+},
+"additional": {
+"contractId": 124,
+"type": 1,
+"adt": 0,
+"chd": [
+{
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"age": 5,
+"index": 0,
+"options": []
+}
+]
+},
+"bedEffect": false,
+"additionalBedByChildIndex": [
+null,
+null
+]
+},
+"basePrice": 63000,
+"firstDayBasePrice": 10500,
+"basePrices": [
+10500,
+10500,
+10500,
+10500,
+10500,
+10500
+],
+"add": {
+"adl": 0,
+"chl": [],
+"price": 0,
+"items": [
+{
+"num": 0,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 1,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 2,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 3,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 4,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 5,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 6,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+}
+]
+},
+"add_meal_price": 11040,
+"meal_items": [
+{
+"name": "AD",
+"count": 8,
+"age": -1,
+"price": 230,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 0,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 1,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 2,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 3,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 4,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 5,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 6,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+}
+],
+"meal_prices": {
+"adl": 1380,
+"chl": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"nights": [
+{
+"adt": 230,
+"chd": [
+"0",
+"0"
+],
+"price": 1840,
+"adt_prices": [
+230,
+230,
+230,
+230,
+230,
+230,
+230,
+230
+],
+"chd_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+{
+"adt": 230,
+"chd": [
+"0",
+"0"
+],
+"price": 1840,
+"adt_prices": [
+230,
+230,
+230,
+230,
+230,
+230,
+230,
+230
+],
+"chd_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+{
+"adt": 230,
+"chd": [
+"0",
+"0"
+],
+"price": 1840,
+"adt_prices": [
+230,
+230,
+230,
+230,
+230,
+230,
+230,
+230
+],
+"chd_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+{
+"adt": 230,
+"chd": [
+"0",
+"0"
+],
+"price": 1840,
+"adt_prices": [
+230,
+230,
+230,
+230,
+230,
+230,
+230,
+230
+],
+"chd_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+{
+"adt": 230,
+"chd": [
+"0",
+"0"
+],
+"price": 1840,
+"adt_prices": [
+230,
+230,
+230,
+230,
+230,
+230,
+230,
+230
+],
+"chd_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+{
+"adt": 230,
+"chd": [
+"0",
+"0"
+],
+"price": 1840,
+"adt_prices": [
+230,
+230,
+230,
+230,
+230,
+230,
+230,
+230
+],
+"chd_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+}
+]
+},
+"nights": 6,
+"add_nights": [
+{
+"adl": 300,
+"chls": [
+"0",
+"0"
+],
+"price": 0,
+"adt_prices": [],
+"chl_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_prices": []
+},
+{
+"adl": 300,
+"chls": [
+"0",
+"0"
+],
+"price": 0,
+"adt_prices": [],
+"chl_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_prices": []
+},
+{
+"adl": 300,
+"chls": [
+"0",
+"0"
+],
+"price": 0,
+"adt_prices": [],
+"chl_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_prices": []
+},
+{
+"adl": 300,
+"chls": [
+"0",
+"0"
+],
+"price": 0,
+"adt_prices": [],
+"chl_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_prices": []
+},
+{
+"adl": 300,
+"chls": [
+"0",
+"0"
+],
+"price": 0,
+"adt_prices": [],
+"chl_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_prices": []
+},
+{
+"adl": 300,
+"chls": [
+"0",
+"0"
+],
+"price": 0,
+"adt_prices": [],
+"chl_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_prices": []
+}
+],
+"periods": [
+{
+"since": "2025-05-01",
+"until": "2025-10-15",
+"sinceCut": "2025-08-23",
+"untilCut": "2025-08-29",
+"nights": 6,
+"seasonIndex": 1,
+"season": "Low",
+"seasonUid": "uid-1738130214701-vn10lqvud",
+"price": 10500
+}
+],
+"seasonIndex": 1,
+"seasonNames": [
+"High",
+"Low",
+"Shoulder",
+"Peak"
+],
+"since": "2025-08-23",
+"until": "2025-08-29",
+"bad": [],
+"price": 94621,
+"cancellations": [
+{
+"from": "0",
+"to": "7",
+"type": "percent",
+"fee": "100",
+"since": "2025-08-22",
+"until": "2025-08-23"
+}
+],
+"payments": [
+{
+"to": "21",
+"since": "2025-08-22",
+"percent": "100"
+}
+],
+"deposits": [],
+"min_nights": 0,
+"taxes": [
+{
+"name": "Green Tax",
+"included": 288,
+"type": "fix",
+"value": "6",
+"age": "2",
+"price": 540,
+"free_night_child_not_charged": null,
+"free_night_adt_not_charged": null,
+"people": 15,
+"people_free_nights": [
+6,
+6,
+6,
+6,
+6,
+6,
+6
+],
+"since": "2025-08-23",
+"nights": 6,
+"included_people": 8
+},
+{
+"name": "Green Tax",
+"included": false,
+"type": "fix",
+"value": "6",
+"age": "2",
+"price": 540,
+"free_night_child_not_charged": null,
+"free_night_adt_not_charged": null,
+"people": 15,
+"people_free_nights": [
+6,
+6,
+6,
+6,
+6,
+6,
+6
+],
+"since": "2025-08-23",
+"nights": 6
+}
+],
+"key": "b792e13ddeb8664bdad9f9be1a4ca028",
+"transfer": "SeaPlane (shared, RT Airport - Hotel - Airport)",
+"transfer_id": 2,
+"transfer_type": "regular",
+"transfer_direction": "round",
+"transfers": [
+{
+"name": "Shared Seaplane Airport - Hotel",
+"id": 2,
+"direction": "one",
+"type": "regular",
+"max_people": null,
+"seasons_prices": [
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+},
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+},
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+},
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+}
+],
+"date_type": "season",
+"dates_prices": [],
+"max_people_free": null,
+"by_week_days": false,
+"week_days": {
+"1d": false,
+"2d": false,
+"3d": false,
+"4d": false,
+"5d": false,
+"6d": false,
+"7d": false
+},
+"transfer_not_required": false,
+"items": [
+{
+"name": "AD",
+"price": "425",
+"count": 8
+},
+{
+"name": "Child",
+"price": "212.5",
+"count": 7
+}
+],
+"uid": "uid-1738130217871-36qof41gg",
+"room_types": [
+null
+],
+"info": null,
+"price": 4887.5,
+"arrival": "2025-08-23",
+"departure": null,
+"policies": [
+{
+"to": {
+"baggage": "30",
+"excess_cost": "6",
+"luggage": "5",
+"transport_time_since": "09:00",
+"transport_time_until": "16:00",
+"transport_tz": "Indian\/Maldives",
+"type": "season",
+"route": "to"
+}
+}
+]
+},
+{
+"name": "Shared Seaplane Hotel - Airport",
+"id": 2,
+"direction": "back",
+"type": "regular",
+"max_people": null,
+"seasons_prices": [
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+},
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+},
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+},
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+}
+],
+"date_type": "season",
+"dates_prices": [],
+"max_people_free": null,
+"by_week_days": false,
+"week_days": {
+"1d": false,
+"2d": false,
+"3d": false,
+"4d": false,
+"5d": false,
+"6d": false,
+"7d": false
+},
+"transfer_not_required": false,
+"items": [
+{
+"name": "AD",
+"price": "425",
+"count": 8
+},
+{
+"name": "Child",
+"price": "212.5",
+"count": 7
+}
+],
+"uid": "uid-1738130217871-yx4rmur88",
+"room_types": [
+null
+],
+"info": null,
+"price": 4887.5,
+"arrival": null,
+"departure": "2025-08-29",
+"policies": [
+{
+"from": {
+"baggage": "30",
+"excess_cost": "6",
+"luggage": "5",
+"transport_time_until": "09:00",
+"transport_tz": "Indian\/Maldives",
+"type": "season",
+"route": "from"
+}
+}
+]
+}
+],
+"transfer_key": "SeaPlane (shared, RT Airport - Hotel - Airport)",
+"transfer_complete": true,
+"spo": {
+"id": 3062,
+"code": "WONDERS OF KIHAVAH 2025",
+"ids": [
+3062
+],
+"spoGroupKey": "3062",
+"items": [
+{
+"group": "meal",
+"name": "AD BB -> HB (0 USD)",
+"code": "WONDERS OF KIHAVAH 2025",
+"type": "meal_plan",
+"nights": 6,
+"count": 8,
+"discount": 7200,
+"price": null,
+"value": null,
+"since": "2025-08-23",
+"until": "2025-08-29",
+"text": null,
+"stayDates": null,
+"context": null
+},
+{
+"group": "meal",
+"name": "Child BB -> HB (0 USD)",
+"code": "WONDERS OF KIHAVAH 2025",
+"type": "meal_plan",
+"nights": 6,
+"count": 7,
+"discount": 0,
+"price": null,
+"value": null,
+"since": "2025-08-23",
+"until": "2025-08-29",
+"text": null,
+"stayDates": null,
+"context": null
+}
+],
+"discount": 7200,
+"price": 0,
+"room_type": null,
+"acc_discount": 0,
+"acc_ex_discount": 0,
+"meal_discount": 0,
+"basePrices": [],
+"basePricesForDiscount": null,
+"meal_prices": [
+640,
+640,
+640,
+640,
+640,
+640
+],
+"meal_prices_adt": [],
+"meal_prices_chd": [],
+"meal_prices_for_discount": null,
+"add_nights": [],
+"add_nights_for_discount": null,
+"add_nights_adt": [],
+"add_nights_chd": [],
+"add_nights_inf": [],
+"meal": null,
+"until": "2025-10-15",
+"status": 1,
+"transfers": null,
+"beveragePackages": null,
+"beveragePackage": null,
+"galaDinners": null,
+"ages": null,
+"meals_ages": null,
+"transfer_ages": null,
+"cancellations": [],
+"payments": [],
+"deposits": [],
+"blackOut": [],
+"repeatVisits": null,
+"nonrefundable_tariff": false,
+"spoStopSaleBlackDates": [],
+"unsetBad": [],
+"available_codes": [],
+"revisedAccommodation": null,
+"revisedStayDates": [],
+"revisedTaxes": null,
+"add_nights_adt_for_discount": null,
+"add_nights_chd_for_discount": null,
+"add_nights_inf_for_discount": null
+},
+"nextContract": null,
+"id": "b792e13ddeb8664bdad9f9be1a4ca028.-.3062.-",
+"status": 1,
+"galaDinners": [],
+"beveragePackages": [
+{
+"name": "NON-ALCOHOLIC BEVERAGE PACKAGE",
+"required": false,
+"meals": [
+"BB",
+"HB",
+"FB"
+],
+"dates": [
+{
+"range": {
+"since": "2025-01-11",
+"until": "2025-12-23"
+},
+"age_prices": [
+{
+    "v": "123"
+},
+{
+    "v": "0"
+}
+],
+"adt_price": "123"
+}
+],
+"uid": "uid-1744358835988-twd6bxdvp",
+"items": [
+{
+"name": "AD",
+"count": 8,
+"price": 738,
+"nights": 6,
+"since": "2025-08-23",
+"until": "2025-08-29"
+},
+{
+"name": "Child",
+"count": 7,
+"price": 738,
+"nights": 6,
+"since": "2025-08-23",
+"until": "2025-08-29"
+}
+],
+"price": 11070
+},
+{
+"name": "GOLD BEVERAGE PACKAGE",
+"required": false,
+"meals": [
+"BB",
+"HB",
+"FB"
+],
+"dates": [
+{
+"range": {
+"since": "2025-01-11",
+"until": "2025-12-23"
+},
+"age_prices": [
+{
+    "v": "123"
+},
+{
+    "v": "0"
+}
+],
+"adt_price": "251"
+}
+],
+"uid": "uid-1744358901078-izagaeu0d",
+"items": [
+{
+"name": "AD",
+"count": 8,
+"price": 1506,
+"nights": 6,
+"since": "2025-08-23",
+"until": "2025-08-29"
+},
+{
+"name": "Child",
+"count": 7,
+"price": 738,
+"nights": 6,
+"since": "2025-08-23",
+"until": "2025-08-29"
+}
+],
+"price": 17214
+},
+{
+"name": "PLATINUM BEVERAGE PACKAGE",
+"required": false,
+"meals": [
+"BB",
+"HB",
+"FB"
+],
+"dates": [
+{
+"range": {
+"since": "2025-01-11",
+"until": "2025-12-23"
+},
+"age_prices": [
+{
+    "v": "123"
+},
+{
+    "v": "0"
+}
+],
+"adt_price": "380"
+}
+],
+"uid": "uid-1744359009575-oezhu6tjs",
+"items": [
+{
+"name": "AD",
+"count": 8,
+"price": 2280,
+"nights": 6,
+"since": "2025-08-23",
+"until": "2025-08-29"
+},
+{
+"name": "Child",
+"count": 7,
+"price": 738,
+"nights": 6,
+"since": "2025-08-23",
+"until": "2025-08-29"
+}
+],
+"price": 23406
+}
+],
+"releasePeriods": [],
+"repeatVisits": null,
+"beveragePackageIndex": 1,
+"beveragePackageName": "GOLD BEVERAGE PACKAGE",
+"searchDate": "2025-08-22",
+"spoStopSale": null,
+"currencyConverted": null,
+"contractHotelStatus": {
+"states": [],
+"state": 1,
+"since": null,
+"stopSale": [],
+"stateDescriptions": []
+},
+"checkInTime": [],
+"festives": null,
+"spoGroups": null,
+"spoGroupsByMeal": null,
+"mealIndex": 2,
+"meal_items_exclude": [],
+"default_status": 1,
+"child_age_revised_transfers": null,
+"spoGroupsForGalaDinner": []
+} -->
+            Availability on request, price guaranted<br />
+
+            <div>
+              <a
+                data-href="https://pre.alacarte.ae/contract-search/sale-status?id=H4sIAAAAAAAAA4VPuw7DIAz8lcgzQeCkCawZOlddUQYI7kOiINHm%2FwtppXao1MG27nR31hnAjgvFUeAOGKD%2BAMVGZqCyv2dmRmI%2FF5MseJ%2FW3Ezkc0q3cu1yaQ4pheZI96unuFDVTMBMJwacWVxD%2BFrgRo0kO%2B%2FJqWHonbden7QjafvFClTw0iGDTOc12Fziclqjh%2F9e3vL6lLe1YKnWCtUivhMh0gOYVMPWV2zk%2FATdsHa7FgEAAA%3D%3D&amp;spo=3062&amp;default_status=1"
+                type="button"
+                class="btn btn-secondary mt-1 sale_calendar"
+                ><i class="fa fa-calendar-alt"></i
+              ></a>
+            </div>
+          </td>
+
+          <td>
+            Contract Price and SPO
+            <div>WONDERS OF KIHAVAH 2025</div>
+          </td>
+
+          <td>Till 15 Oct 2025</td>
+          <td>
+            <span class="contract-price"> 94 621.00 USD </span>
+            <br />
+            <a
+              target="_blank"
+              href="https://pre.alacarte.ae/contract-search/detail?id=H4sIAAAAAAAAA4VPuw7DIAz8lcgzQeCkCawZOlddUQYI7kOiINHm%2FwtppXao1MG27nR31hnAjgvFUeAOGKD%2BAMVGZqCyv2dmRmI%2FF5MseJ%2FW3Ezkc0q3cu1yaQ4pheZI96unuFDVTMBMJwacWVxD%2BFrgRo0kO%2B%2FJqWHonbden7QjafvFClTw0iGDTOc12Fziclqjh%2F9e3vL6lLe1YKnWCtUivhMh0gOYVMPWV2zk%2FATdsHa7FgEAAA%3D%3D"
+            >
+              Select Quotation
+            </a>
+          </td>
+          <td>
+            <!-- Политики -->
+
+            Cancellation policy:<br />
+            <div>22 Aug 2025 - 23 Aug 2025 fee 100%</div>
+
+            Payment policy:<br />
+            <div>22 Aug 2025 - 100%</div>
+          </td>
+        </tr>
+        <tr
+          style="
+            background-color: white;
+            color: black;
+            border: 1px solid #ced4da;
+          "
+        >
+          <td>
+            <span class="text-nowrap">23 Aug 2025 (Sat) - </span>
+            <span class="text-nowrap">29 Aug 2025 (Fri)</span>
+          </td>
+          <td>ANANTARA KIHAVAH MALDIVES VILLAS</td>
+
+          <td>
+            Four Bedroom Beach Pool Residence
+            <div>8 AD 7 CHD</div>
+            <div>SeaPlane (shared, RT Airport - Hotel - Airport)</div>
+          </td>
+          <td>FB + GOLD BEVERAGE PACKAGE</td>
+          <td style="position: relative">
+            <!-- {
+"contract_id": 124,
+"hotel_id": 21,
+"currency": "USD",
+"type": "Four Bedroom Beach Pool Residence",
+"type_id": 186,
+"room_count": 4,
+"meal_base": "BB",
+"meal": "FB",
+"meal_code": "14",
+"meal_type_uid": "uid-jq3spu1gqq17w-k1gijob11",
+"acc": {
+"adl": 8,
+"chl": [],
+"inf": [],
+"chl_adl": null,
+"max": {
+"adl": 12,
+"chl": [
+5,
+5,
+5,
+null
+],
+"inf": []
+},
+"add": {
+"adl": 0,
+"chl": [
+5,
+5,
+5,
+5,
+5,
+5,
+5
+],
+"inf": [],
+"free": 7,
+"free_indexes": [
+"Child"
+],
+"chl_indexes": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_indexes": []
+},
+"cur": {
+"adl": 8,
+"chl": [
+5,
+5,
+5
+],
+"inf": [],
+"chl_adl": [
+5,
+5,
+5,
+5
+],
+"chl_indexes": [
+0,
+0,
+0
+],
+"inf_indexes": [],
+"chl_adl_indexes": [
+0,
+0,
+0,
+0
+]
+},
+"meal": {
+"adl": 8,
+"chl": [
+5,
+5,
+5,
+5,
+5,
+5,
+5
+],
+"chl_indexes": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+"transfer": {
+"adl": 8,
+"chl": [
+5,
+5,
+5,
+5,
+5,
+5,
+5
+],
+"chl_indexes": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+}
+},
+"accommodation": {
+"baseSlots": {
+"slots": [
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+}
+]
+},
+"maxSlots": {
+"slots": [
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": 11,
+"minAge": 2,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": 11,
+"minAge": 2,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": 11,
+"minAge": 2,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": 11,
+"minAge": 2,
+"slotOptions": [],
+"pax": false,
+"type": 0,
+"age": null,
+"index": null,
+"options": []
+}
+]
+},
+"base": {
+"contractId": 124,
+"type": 1,
+"adt": 8,
+"chd": []
+},
+"additional": {
+"contractId": 124,
+"type": 1,
+"adt": 0,
+"chd": [
+{
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"age": 5,
+"index": 0,
+"options": []
+}
+]
+},
+"bedEffect": false,
+"additionalBedByChildIndex": [
+null,
+null
+]
+},
+"basePrice": 63000,
+"firstDayBasePrice": 10500,
+"basePrices": [
+10500,
+10500,
+10500,
+10500,
+10500,
+10500
+],
+"add": {
+"adl": 0,
+"chl": [],
+"price": 0,
+"items": [
+{
+"num": 0,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 1,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 2,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 3,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 4,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 5,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 6,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+}
+]
+},
+"add_meal_price": 11040,
+"meal_items": [
+{
+"name": "AD",
+"count": 8,
+"age": -1,
+"price": 230,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 0,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 1,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 2,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 3,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 4,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 5,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 6,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+}
+],
+"meal_prices": {
+"adl": 1380,
+"chl": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"nights": [
+{
+"adt": 230,
+"chd": [
+"0",
+"0"
+],
+"price": 1840,
+"adt_prices": [
+230,
+230,
+230,
+230,
+230,
+230,
+230,
+230
+],
+"chd_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+{
+"adt": 230,
+"chd": [
+"0",
+"0"
+],
+"price": 1840,
+"adt_prices": [
+230,
+230,
+230,
+230,
+230,
+230,
+230,
+230
+],
+"chd_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+{
+"adt": 230,
+"chd": [
+"0",
+"0"
+],
+"price": 1840,
+"adt_prices": [
+230,
+230,
+230,
+230,
+230,
+230,
+230,
+230
+],
+"chd_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+{
+"adt": 230,
+"chd": [
+"0",
+"0"
+],
+"price": 1840,
+"adt_prices": [
+230,
+230,
+230,
+230,
+230,
+230,
+230,
+230
+],
+"chd_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+{
+"adt": 230,
+"chd": [
+"0",
+"0"
+],
+"price": 1840,
+"adt_prices": [
+230,
+230,
+230,
+230,
+230,
+230,
+230,
+230
+],
+"chd_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+{
+"adt": 230,
+"chd": [
+"0",
+"0"
+],
+"price": 1840,
+"adt_prices": [
+230,
+230,
+230,
+230,
+230,
+230,
+230,
+230
+],
+"chd_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+}
+]
+},
+"nights": 6,
+"add_nights": [
+{
+"adl": 300,
+"chls": [
+"0",
+"0"
+],
+"price": 0,
+"adt_prices": [],
+"chl_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_prices": []
+},
+{
+"adl": 300,
+"chls": [
+"0",
+"0"
+],
+"price": 0,
+"adt_prices": [],
+"chl_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_prices": []
+},
+{
+"adl": 300,
+"chls": [
+"0",
+"0"
+],
+"price": 0,
+"adt_prices": [],
+"chl_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_prices": []
+},
+{
+"adl": 300,
+"chls": [
+"0",
+"0"
+],
+"price": 0,
+"adt_prices": [],
+"chl_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_prices": []
+},
+{
+"adl": 300,
+"chls": [
+"0",
+"0"
+],
+"price": 0,
+"adt_prices": [],
+"chl_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_prices": []
+},
+{
+"adl": 300,
+"chls": [
+"0",
+"0"
+],
+"price": 0,
+"adt_prices": [],
+"chl_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_prices": []
+}
+],
+"periods": [
+{
+"since": "2025-05-01",
+"until": "2025-10-15",
+"sinceCut": "2025-08-23",
+"untilCut": "2025-08-29",
+"nights": 6,
+"seasonIndex": 1,
+"season": "Low",
+"seasonUid": "uid-1738130214701-vn10lqvud",
+"price": 10500
+}
+],
+"seasonIndex": 1,
+"seasonNames": [
+"High",
+"Low",
+"Shoulder",
+"Peak"
+],
+"since": "2025-08-23",
+"until": "2025-08-29",
+"bad": [],
+"price": 101821,
+"cancellations": [
+{
+"from": "0",
+"to": "7",
+"type": "percent",
+"fee": "100",
+"since": "2025-08-22",
+"until": "2025-08-23"
+}
+],
+"payments": [
+{
+"to": "21",
+"since": "2025-08-22",
+"percent": "100"
+}
+],
+"deposits": [],
+"min_nights": 0,
+"taxes": [
+{
+"name": "Green Tax",
+"included": 288,
+"type": "fix",
+"value": "6",
+"age": "2",
+"price": 540,
+"free_night_child_not_charged": null,
+"free_night_adt_not_charged": null,
+"people": 15,
+"people_free_nights": [
+6,
+6,
+6,
+6,
+6,
+6,
+6
+],
+"since": "2025-08-23",
+"nights": 6,
+"included_people": 8
+},
+{
+"name": "Green Tax",
+"included": false,
+"type": "fix",
+"value": "6",
+"age": "2",
+"price": 540,
+"free_night_child_not_charged": null,
+"free_night_adt_not_charged": null,
+"people": 15,
+"people_free_nights": [
+6,
+6,
+6,
+6,
+6,
+6,
+6
+],
+"since": "2025-08-23",
+"nights": 6
+}
+],
+"key": "b792e13ddeb8664bdad9f9be1a4ca028",
+"transfer": "SeaPlane (shared, RT Airport - Hotel - Airport)",
+"transfer_id": 2,
+"transfer_type": "regular",
+"transfer_direction": "round",
+"transfers": [
+{
+"name": "Shared Seaplane Airport - Hotel",
+"id": 2,
+"direction": "one",
+"type": "regular",
+"max_people": null,
+"seasons_prices": [
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+},
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+},
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+},
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+}
+],
+"date_type": "season",
+"dates_prices": [],
+"max_people_free": null,
+"by_week_days": false,
+"week_days": {
+"1d": false,
+"2d": false,
+"3d": false,
+"4d": false,
+"5d": false,
+"6d": false,
+"7d": false
+},
+"transfer_not_required": false,
+"items": [
+{
+"name": "AD",
+"price": "425",
+"count": 8
+},
+{
+"name": "Child",
+"price": "212.5",
+"count": 7
+}
+],
+"uid": "uid-1738130217871-36qof41gg",
+"room_types": [
+null
+],
+"info": null,
+"price": 4887.5,
+"arrival": "2025-08-23",
+"departure": null,
+"policies": [
+{
+"to": {
+"baggage": "30",
+"excess_cost": "6",
+"luggage": "5",
+"transport_time_since": "09:00",
+"transport_time_until": "16:00",
+"transport_tz": "Indian\/Maldives",
+"type": "season",
+"route": "to"
+}
+}
+]
+},
+{
+"name": "Shared Seaplane Hotel - Airport",
+"id": 2,
+"direction": "back",
+"type": "regular",
+"max_people": null,
+"seasons_prices": [
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+},
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+},
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+},
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+}
+],
+"date_type": "season",
+"dates_prices": [],
+"max_people_free": null,
+"by_week_days": false,
+"week_days": {
+"1d": false,
+"2d": false,
+"3d": false,
+"4d": false,
+"5d": false,
+"6d": false,
+"7d": false
+},
+"transfer_not_required": false,
+"items": [
+{
+"name": "AD",
+"price": "425",
+"count": 8
+},
+{
+"name": "Child",
+"price": "212.5",
+"count": 7
+}
+],
+"uid": "uid-1738130217871-yx4rmur88",
+"room_types": [
+null
+],
+"info": null,
+"price": 4887.5,
+"arrival": null,
+"departure": "2025-08-29",
+"policies": [
+{
+"from": {
+"baggage": "30",
+"excess_cost": "6",
+"luggage": "5",
+"transport_time_until": "09:00",
+"transport_tz": "Indian\/Maldives",
+"type": "season",
+"route": "from"
+}
+}
+]
+}
+],
+"transfer_key": "SeaPlane (shared, RT Airport - Hotel - Airport)",
+"transfer_complete": true,
+"spo": null,
+"nextContract": null,
+"id": "b792e13ddeb8664bdad9f9be1a4ca028.-.-.-",
+"status": 1,
+"galaDinners": [],
+"beveragePackages": [
+{
+"name": "NON-ALCOHOLIC BEVERAGE PACKAGE",
+"required": false,
+"meals": [
+"BB",
+"HB",
+"FB"
+],
+"dates": [
+{
+"range": {
+"since": "2025-01-11",
+"until": "2025-12-23"
+},
+"age_prices": [
+{
+    "v": "123"
+},
+{
+    "v": "0"
+}
+],
+"adt_price": "123"
+}
+],
+"uid": "uid-1744358835988-twd6bxdvp",
+"items": [
+{
+"name": "AD",
+"count": 8,
+"price": 738,
+"nights": 6,
+"since": "2025-08-23",
+"until": "2025-08-29"
+},
+{
+"name": "Child",
+"count": 7,
+"price": 738,
+"nights": 6,
+"since": "2025-08-23",
+"until": "2025-08-29"
+}
+],
+"price": 11070
+},
+{
+"name": "GOLD BEVERAGE PACKAGE",
+"required": false,
+"meals": [
+"BB",
+"HB",
+"FB"
+],
+"dates": [
+{
+"range": {
+"since": "2025-01-11",
+"until": "2025-12-23"
+},
+"age_prices": [
+{
+    "v": "123"
+},
+{
+    "v": "0"
+}
+],
+"adt_price": "251"
+}
+],
+"uid": "uid-1744358901078-izagaeu0d",
+"items": [
+{
+"name": "AD",
+"count": 8,
+"price": 1506,
+"nights": 6,
+"since": "2025-08-23",
+"until": "2025-08-29"
+},
+{
+"name": "Child",
+"count": 7,
+"price": 738,
+"nights": 6,
+"since": "2025-08-23",
+"until": "2025-08-29"
+}
+],
+"price": 17214
+},
+{
+"name": "PLATINUM BEVERAGE PACKAGE",
+"required": false,
+"meals": [
+"BB",
+"HB",
+"FB"
+],
+"dates": [
+{
+"range": {
+"since": "2025-01-11",
+"until": "2025-12-23"
+},
+"age_prices": [
+{
+    "v": "123"
+},
+{
+    "v": "0"
+}
+],
+"adt_price": "380"
+}
+],
+"uid": "uid-1744359009575-oezhu6tjs",
+"items": [
+{
+"name": "AD",
+"count": 8,
+"price": 2280,
+"nights": 6,
+"since": "2025-08-23",
+"until": "2025-08-29"
+},
+{
+"name": "Child",
+"count": 7,
+"price": 738,
+"nights": 6,
+"since": "2025-08-23",
+"until": "2025-08-29"
+}
+],
+"price": 23406
+}
+],
+"releasePeriods": [],
+"repeatVisits": null,
+"beveragePackageIndex": 1,
+"beveragePackageName": "GOLD BEVERAGE PACKAGE",
+"searchDate": "2025-08-22",
+"spoStopSale": null,
+"currencyConverted": null,
+"contractHotelStatus": {
+"states": [],
+"state": 1,
+"since": null,
+"stopSale": [],
+"stateDescriptions": []
+},
+"checkInTime": [],
+"festives": null,
+"spoGroups": [],
+"spoGroupsByMeal": {
+"FB": {
+"3061": {
+"id": 3061,
+"code": "BEST OF MALDIVES 2025",
+"ids": [
+3061
+],
+"spoGroupKey": "3061",
+"items": [
+{
+"group": "meal",
+"name": "AD BB -> HB (0 USD)",
+"code": "BEST OF MALDIVES 2025",
+"type": "meal_plan",
+"nights": 6,
+"count": 8,
+"discount": 7200,
+"price": null,
+"value": null,
+"since": "2025-08-23",
+"until": "2025-08-29",
+"text": null,
+"stayDates": null,
+"context": null
+},
+{
+"group": "meal",
+"name": "Child BB -> HB (0 USD)",
+"code": "BEST OF MALDIVES 2025",
+"type": "meal_plan",
+"nights": 6,
+"count": 7,
+"discount": 0,
+"price": null,
+"value": null,
+"since": "2025-08-23",
+"until": "2025-08-29",
+"text": null,
+"stayDates": null,
+"context": null
+}
+],
+"discount": 7200,
+"price": 0,
+"room_type": null,
+"acc_discount": 0,
+"acc_ex_discount": 0,
+"meal_discount": 0,
+"basePrices": [],
+"basePricesForDiscount": null,
+"meal_prices": [
+640,
+640,
+640,
+640,
+640,
+640
+],
+"meal_prices_adt": [],
+"meal_prices_chd": [],
+"meal_prices_for_discount": null,
+"add_nights": [],
+"add_nights_for_discount": null,
+"add_nights_adt": [],
+"add_nights_chd": [],
+"add_nights_inf": [],
+"meal": null,
+"until": "2025-10-15",
+"status": 1,
+"transfers": null,
+"beveragePackages": null,
+"beveragePackage": null,
+"galaDinners": null,
+"ages": null,
+"meals_ages": null,
+"transfer_ages": null,
+"cancellations": [],
+"payments": [],
+"deposits": [],
+"blackOut": [],
+"repeatVisits": null,
+"nonrefundable_tariff": false,
+"spoStopSaleBlackDates": [],
+"unsetBad": [],
+"available_codes": [],
+"revisedAccommodation": null,
+"revisedStayDates": [],
+"revisedTaxes": null,
+"add_nights_adt_for_discount": null,
+"add_nights_chd_for_discount": null,
+"add_nights_inf_for_discount": null
+},
+"3062": {
+"id": 3062,
+"code": "WONDERS OF KIHAVAH 2025",
+"ids": [
+3062
+],
+"spoGroupKey": "3062",
+"items": [
+{
+"group": "meal",
+"name": "AD BB -> HB (0 USD)",
+"code": "WONDERS OF KIHAVAH 2025",
+"type": "meal_plan",
+"nights": 6,
+"count": 8,
+"discount": 7200,
+"price": null,
+"value": null,
+"since": "2025-08-23",
+"until": "2025-08-29",
+"text": null,
+"stayDates": null,
+"context": null
+},
+{
+"group": "meal",
+"name": "Child BB -> HB (0 USD)",
+"code": "WONDERS OF KIHAVAH 2025",
+"type": "meal_plan",
+"nights": 6,
+"count": 7,
+"discount": 0,
+"price": null,
+"value": null,
+"since": "2025-08-23",
+"until": "2025-08-29",
+"text": null,
+"stayDates": null,
+"context": null
+}
+],
+"discount": 7200,
+"price": 0,
+"room_type": null,
+"acc_discount": 0,
+"acc_ex_discount": 0,
+"meal_discount": 0,
+"basePrices": [],
+"basePricesForDiscount": null,
+"meal_prices": [
+640,
+640,
+640,
+640,
+640,
+640
+],
+"meal_prices_adt": [],
+"meal_prices_chd": [],
+"meal_prices_for_discount": null,
+"add_nights": [],
+"add_nights_for_discount": null,
+"add_nights_adt": [],
+"add_nights_chd": [],
+"add_nights_inf": [],
+"meal": null,
+"until": "2025-10-15",
+"status": 1,
+"transfers": null,
+"beveragePackages": null,
+"beveragePackage": null,
+"galaDinners": null,
+"ages": null,
+"meals_ages": null,
+"transfer_ages": null,
+"cancellations": [],
+"payments": [],
+"deposits": [],
+"blackOut": [],
+"repeatVisits": null,
+"nonrefundable_tariff": false,
+"spoStopSaleBlackDates": [],
+"unsetBad": [],
+"available_codes": [],
+"revisedAccommodation": null,
+"revisedStayDates": [],
+"revisedTaxes": null,
+"add_nights_adt_for_discount": null,
+"add_nights_chd_for_discount": null,
+"add_nights_inf_for_discount": null
+}
+}
+},
+"mealIndex": 2,
+"meal_items_exclude": [],
+"default_status": 1,
+"child_age_revised_transfers": null,
+"spoGroupsForGalaDinner": []
+} -->
+            Availability on request, price guaranted<br />
+
+            <div>
+              <a
+                data-href="https://pre.alacarte.ae/contract-search/sale-status?id=H4sIAAAAAAAAA4VPywrDIBD8lbBnE3RjE73m0HPpNeSgcfsAq2Dr%2F1dDoFAKZdkdZtgZmBmw77jqkOMBGKD%2BEMVGNkNVf%2B%2FCZoFyKSZR%2BDHm1EzkUoyPgma9NacYfXOm591RWKn%2BTMBC9v77gB01kuidI6uGQVpnnL5oS8LI1XBUuw0ZJLpmb1IJSzEHB%2F%2B9XVundiutWq5axD0OAr2ACTVsVfkmLm8Rg%2FYjEQEAAA%3D%3D&amp;spo=&amp;default_status=1"
+                type="button"
+                class="btn btn-secondary mt-1 sale_calendar"
+                ><i class="fa fa-calendar-alt"></i
+              ></a>
+            </div>
+          </td>
+
+          <td>Contract Price</td>
+
+          <td></td>
+          <td>
+            <span class="contract-price"> 101 821.00 USD </span>
+            <br />
+            <a
+              target="_blank"
+              href="https://pre.alacarte.ae/contract-search/detail?id=H4sIAAAAAAAAA4VPywrDIBD8lbBnE3RjE73m0HPpNeSgcfsAq2Dr%2F1dDoFAKZdkdZtgZmBmw77jqkOMBGKD%2BEMVGNkNVf%2B%2FCZoFyKSZR%2BDHm1EzkUoyPgma9NacYfXOm591RWKn%2BTMBC9v77gB01kuidI6uGQVpnnL5oS8LI1XBUuw0ZJLpmb1IJSzEHB%2F%2B9XVundiutWq5axD0OAr2ACTVsVfkmLm8Rg%2FYjEQEAAA%3D%3D"
+            >
+              Select Quotation
+            </a>
+          </td>
+          <td>
+            <!-- Политики -->
+
+            Cancellation policy:<br />
+            <div>22 Aug 2025 - 23 Aug 2025 fee 100%</div>
+
+            Payment policy:<br />
+            <div>22 Aug 2025 - 100%</div>
+          </td>
+        </tr>
+        <tr
+          style="
+            background-color: white;
+            color: black;
+            border: 1px solid #ced4da;
+          "
+        >
+          <td>
+            <span class="text-nowrap">23 Aug 2025 (Sat) - </span>
+            <span class="text-nowrap">29 Aug 2025 (Fri)</span>
+          </td>
+          <td>ANANTARA KIHAVAH MALDIVES VILLAS</td>
+
+          <td>
+            Four Bedroom Beach Pool Residence
+            <div>8 AD 7 CHD</div>
+            <div>
+              Domestic flight + Speedboat (shared, RT Airport - Hotel - Airport)
+            </div>
+          </td>
+          <td>FB + GOLD BEVERAGE PACKAGE</td>
+          <td style="position: relative">
+            <!-- {
+"contract_id": 124,
+"hotel_id": 21,
+"currency": "USD",
+"type": "Four Bedroom Beach Pool Residence",
+"type_id": 186,
+"room_count": 4,
+"meal_base": "BB",
+"meal": "FB",
+"meal_code": "14",
+"meal_type_uid": "uid-jq3spu1gqq17w-k1gijob11",
+"acc": {
+"adl": 8,
+"chl": [],
+"inf": [],
+"chl_adl": null,
+"max": {
+"adl": 12,
+"chl": [
+5,
+5,
+5,
+null
+],
+"inf": []
+},
+"add": {
+"adl": 0,
+"chl": [
+5,
+5,
+5,
+5,
+5,
+5,
+5
+],
+"inf": [],
+"free": 7,
+"free_indexes": [
+"Child"
+],
+"chl_indexes": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_indexes": []
+},
+"cur": {
+"adl": 8,
+"chl": [
+5,
+5,
+5
+],
+"inf": [],
+"chl_adl": [
+5,
+5,
+5,
+5
+],
+"chl_indexes": [
+0,
+0,
+0
+],
+"inf_indexes": [],
+"chl_adl_indexes": [
+0,
+0,
+0,
+0
+]
+},
+"meal": {
+"adl": 8,
+"chl": [
+5,
+5,
+5,
+5,
+5,
+5,
+5
+],
+"chl_indexes": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+"transfer": {
+"adl": 8,
+"chl": [
+5,
+5,
+5,
+5,
+5,
+5,
+5
+],
+"chl_indexes": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+}
+},
+"accommodation": {
+"baseSlots": {
+"slots": [
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": true,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+}
+]
+},
+"maxSlots": {
+"slots": [
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 1,
+"age": null,
+"index": null,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": null,
+"minAge": null,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": 11,
+"minAge": 2,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": 11,
+"minAge": 2,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": 11,
+"minAge": 2,
+"slotOptions": [],
+"pax": false,
+"type": 2,
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"maxAge": 11,
+"minAge": 2,
+"slotOptions": [],
+"pax": false,
+"type": 0,
+"age": null,
+"index": null,
+"options": []
+}
+]
+},
+"base": {
+"contractId": 124,
+"type": 1,
+"adt": 8,
+"chd": []
+},
+"additional": {
+"contractId": 124,
+"type": 1,
+"adt": 0,
+"chd": [
+{
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"age": 5,
+"index": 0,
+"options": []
+},
+{
+"age": 5,
+"index": 0,
+"options": []
+}
+]
+},
+"bedEffect": false,
+"additionalBedByChildIndex": [
+null,
+null
+]
+},
+"basePrice": 63000,
+"firstDayBasePrice": 10500,
+"basePrices": [
+10500,
+10500,
+10500,
+10500,
+10500,
+10500
+],
+"add": {
+"adl": 0,
+"chl": [],
+"price": 0,
+"items": [
+{
+"num": 0,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 1,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 2,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 3,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 4,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 5,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 6,
+"name": "Child",
+"age": 5,
+"count": 1,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+}
+]
+},
+"add_meal_price": 11040,
+"meal_items": [
+{
+"name": "AD",
+"count": 8,
+"age": -1,
+"price": 230,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 0,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 1,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 2,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 3,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 4,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 5,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+},
+{
+"num": 6,
+"name": "Child",
+"count": 1,
+"age": 5,
+"price": 0,
+"since": "2025-08-23",
+"nights": 6
+}
+],
+"meal_prices": {
+"adl": 1380,
+"chl": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"nights": [
+{
+"adt": 230,
+"chd": [
+"0",
+"0"
+],
+"price": 1840,
+"adt_prices": [
+230,
+230,
+230,
+230,
+230,
+230,
+230,
+230
+],
+"chd_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+{
+"adt": 230,
+"chd": [
+"0",
+"0"
+],
+"price": 1840,
+"adt_prices": [
+230,
+230,
+230,
+230,
+230,
+230,
+230,
+230
+],
+"chd_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+{
+"adt": 230,
+"chd": [
+"0",
+"0"
+],
+"price": 1840,
+"adt_prices": [
+230,
+230,
+230,
+230,
+230,
+230,
+230,
+230
+],
+"chd_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+{
+"adt": 230,
+"chd": [
+"0",
+"0"
+],
+"price": 1840,
+"adt_prices": [
+230,
+230,
+230,
+230,
+230,
+230,
+230,
+230
+],
+"chd_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+{
+"adt": 230,
+"chd": [
+"0",
+"0"
+],
+"price": 1840,
+"adt_prices": [
+230,
+230,
+230,
+230,
+230,
+230,
+230,
+230
+],
+"chd_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+{
+"adt": 230,
+"chd": [
+"0",
+"0"
+],
+"price": 1840,
+"adt_prices": [
+230,
+230,
+230,
+230,
+230,
+230,
+230,
+230
+],
+"chd_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+}
+]
+},
+"nights": 6,
+"add_nights": [
+{
+"adl": 300,
+"chls": [
+"0",
+"0"
+],
+"price": 0,
+"adt_prices": [],
+"chl_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_prices": []
+},
+{
+"adl": 300,
+"chls": [
+"0",
+"0"
+],
+"price": 0,
+"adt_prices": [],
+"chl_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_prices": []
+},
+{
+"adl": 300,
+"chls": [
+"0",
+"0"
+],
+"price": 0,
+"adt_prices": [],
+"chl_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_prices": []
+},
+{
+"adl": 300,
+"chls": [
+"0",
+"0"
+],
+"price": 0,
+"adt_prices": [],
+"chl_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_prices": []
+},
+{
+"adl": 300,
+"chls": [
+"0",
+"0"
+],
+"price": 0,
+"adt_prices": [],
+"chl_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_prices": []
+},
+{
+"adl": 300,
+"chls": [
+"0",
+"0"
+],
+"price": 0,
+"adt_prices": [],
+"chl_prices": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"inf_prices": []
+}
+],
+"periods": [
+{
+"since": "2025-05-01",
+"until": "2025-10-15",
+"sinceCut": "2025-08-23",
+"untilCut": "2025-08-29",
+"nights": 6,
+"seasonIndex": 1,
+"season": "Low",
+"seasonUid": "uid-1738130214701-vn10lqvud",
+"price": 10500
+}
+],
+"seasonIndex": 1,
+"seasonNames": [
+"High",
+"Low",
+"Shoulder",
+"Peak"
+],
+"since": "2025-08-23",
+"until": "2025-08-29",
+"bad": [],
+"price": 101821,
+"cancellations": [
+{
+"from": "0",
+"to": "7",
+"type": "percent",
+"fee": "100",
+"since": "2025-08-22",
+"until": "2025-08-23"
+}
+],
+"payments": [
+{
+"to": "21",
+"since": "2025-08-22",
+"percent": "100"
+}
+],
+"deposits": [],
+"min_nights": 0,
+"taxes": [
+{
+"name": "Green Tax",
+"included": 288,
+"type": "fix",
+"value": "6",
+"age": "2",
+"price": 540,
+"free_night_child_not_charged": null,
+"free_night_adt_not_charged": null,
+"people": 15,
+"people_free_nights": [
+6,
+6,
+6,
+6,
+6,
+6,
+6
+],
+"since": "2025-08-23",
+"nights": 6,
+"included_people": 8
+},
+{
+"name": "Green Tax",
+"included": false,
+"type": "fix",
+"value": "6",
+"age": "2",
+"price": 540,
+"free_night_child_not_charged": null,
+"free_night_adt_not_charged": null,
+"people": 15,
+"people_free_nights": [
+6,
+6,
+6,
+6,
+6,
+6,
+6
+],
+"since": "2025-08-23",
+"nights": 6
+}
+],
+"key": "1abfa29cdaea222b2c7be592fca8db43",
+"transfer": "Domestic flight + Speedboat (shared, RT Airport - Hotel - Airport)",
+"transfer_id": 7,
+"transfer_type": "regular",
+"transfer_direction": "round",
+"transfers": [
+{
+"name": "Shared Domestic Flight + Speedboat Airport - Hotel",
+"id": 7,
+"direction": "one",
+"type": "regular",
+"max_people": null,
+"seasons_prices": [
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+},
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+},
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+},
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+}
+],
+"date_type": "season",
+"dates_prices": [],
+"max_people_free": null,
+"by_week_days": false,
+"week_days": {
+"1d": false,
+"2d": false,
+"3d": false,
+"4d": false,
+"5d": false,
+"6d": false,
+"7d": false
+},
+"transfer_not_required": false,
+"items": [
+{
+"name": "AD",
+"price": "425",
+"count": 8
+},
+{
+"name": "Child",
+"price": "212.5",
+"count": 7
+}
+],
+"uid": "uid-1738130217871-ryk37yvmt",
+"room_types": [
+null
+],
+"info": null,
+"price": 4887.5,
+"arrival": "2025-08-23",
+"departure": null,
+"policies": [
+{
+"to": {
+"baggage": "30",
+"excess_cost": "6",
+"luggage": "5",
+"transport_time_since": null,
+"transport_time_until": null,
+"transport_tz": null,
+"type": "season",
+"route": "to"
+}
+}
+]
+},
+{
+"name": "Shared Domestic Flight + Speedboat Hotel - Airport",
+"id": 7,
+"direction": "back",
+"type": "regular",
+"max_people": null,
+"seasons_prices": [
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+},
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+},
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+},
+{
+"v": "425",
+"ages": [
+{
+    "v": "212.5"
+},
+{
+    "v": "0"
+}
+]
+}
+],
+"date_type": "season",
+"dates_prices": [],
+"max_people_free": null,
+"by_week_days": false,
+"week_days": {
+"1d": false,
+"2d": false,
+"3d": false,
+"4d": false,
+"5d": false,
+"6d": false,
+"7d": false
+},
+"transfer_not_required": false,
+"items": [
+{
+"name": "AD",
+"price": "425",
+"count": 8
+},
+{
+"name": "Child",
+"price": "212.5",
+"count": 7
+}
+],
+"uid": "uid-1738130217871-e3nahu6mz",
+"room_types": [
+null
+],
+"info": null,
+"price": 4887.5,
+"arrival": null,
+"departure": "2025-08-29",
+"policies": [
+{
+"from": {
+"baggage": "30",
+"excess_cost": "6",
+"luggage": "5",
+"transport_time_until": null,
+"transport_tz": null,
+"type": "season",
+"route": "from"
+}
+}
+]
+}
+],
+"transfer_key": "Domestic flight + Speedboat (shared, RT Airport - Hotel - Airport)",
+"transfer_complete": true,
+"spo": null,
+"nextContract": null,
+"id": "1abfa29cdaea222b2c7be592fca8db43.-.-.-",
+"status": 1,
+"galaDinners": [],
+"beveragePackages": [
+{
+"name": "NON-ALCOHOLIC BEVERAGE PACKAGE",
+"required": false,
+"meals": [
+"BB",
+"HB",
+"FB"
+],
+"dates": [
+{
+"range": {
+"since": "2025-01-11",
+"until": "2025-12-23"
+},
+"age_prices": [
+{
+    "v": "123"
+},
+{
+    "v": "0"
+}
+],
+"adt_price": "123"
+}
+],
+"uid": "uid-1744358835988-twd6bxdvp",
+"items": [
+{
+"name": "AD",
+"count": 8,
+"price": 738,
+"nights": 6,
+"since": "2025-08-23",
+"until": "2025-08-29"
+},
+{
+"name": "Child",
+"count": 7,
+"price": 738,
+"nights": 6,
+"since": "2025-08-23",
+"until": "2025-08-29"
+}
+],
+"price": 11070
+},
+{
+"name": "GOLD BEVERAGE PACKAGE",
+"required": false,
+"meals": [
+"BB",
+"HB",
+"FB"
+],
+"dates": [
+{
+"range": {
+"since": "2025-01-11",
+"until": "2025-12-23"
+},
+"age_prices": [
+{
+    "v": "123"
+},
+{
+    "v": "0"
+}
+],
+"adt_price": "251"
+}
+],
+"uid": "uid-1744358901078-izagaeu0d",
+"items": [
+{
+"name": "AD",
+"count": 8,
+"price": 1506,
+"nights": 6,
+"since": "2025-08-23",
+"until": "2025-08-29"
+},
+{
+"name": "Child",
+"count": 7,
+"price": 738,
+"nights": 6,
+"since": "2025-08-23",
+"until": "2025-08-29"
+}
+],
+"price": 17214
+},
+{
+"name": "PLATINUM BEVERAGE PACKAGE",
+"required": false,
+"meals": [
+"BB",
+"HB",
+"FB"
+],
+"dates": [
+{
+"range": {
+"since": "2025-01-11",
+"until": "2025-12-23"
+},
+"age_prices": [
+{
+    "v": "123"
+},
+{
+    "v": "0"
+}
+],
+"adt_price": "380"
+}
+],
+"uid": "uid-1744359009575-oezhu6tjs",
+"items": [
+{
+"name": "AD",
+"count": 8,
+"price": 2280,
+"nights": 6,
+"since": "2025-08-23",
+"until": "2025-08-29"
+},
+{
+"name": "Child",
+"count": 7,
+"price": 738,
+"nights": 6,
+"since": "2025-08-23",
+"until": "2025-08-29"
+}
+],
+"price": 23406
+}
+],
+"releasePeriods": [],
+"repeatVisits": null,
+"beveragePackageIndex": 1,
+"beveragePackageName": "GOLD BEVERAGE PACKAGE",
+"searchDate": "2025-08-22",
+"spoStopSale": null,
+"currencyConverted": null,
+"contractHotelStatus": {
+"states": [],
+"state": 1,
+"since": null,
+"stopSale": [],
+"stateDescriptions": []
+},
+"checkInTime": [],
+"festives": null,
+"spoGroups": [],
+"spoGroupsByMeal": {
+"FB": {
+"3061": {
+"id": 3061,
+"code": "BEST OF MALDIVES 2025",
+"ids": [
+3061
+],
+"spoGroupKey": "3061",
+"items": [
+{
+"group": "meal",
+"name": "AD BB -> HB (0 USD)",
+"code": "BEST OF MALDIVES 2025",
+"type": "meal_plan",
+"nights": 6,
+"count": 8,
+"discount": 7200,
+"price": null,
+"value": null,
+"since": "2025-08-23",
+"until": "2025-08-29",
+"text": null,
+"stayDates": null,
+"context": null
+},
+{
+"group": "meal",
+"name": "Child BB -> HB (0 USD)",
+"code": "BEST OF MALDIVES 2025",
+"type": "meal_plan",
+"nights": 6,
+"count": 7,
+"discount": 0,
+"price": null,
+"value": null,
+"since": "2025-08-23",
+"until": "2025-08-29",
+"text": null,
+"stayDates": null,
+"context": null
+}
+],
+"discount": 7200,
+"price": 0,
+"room_type": null,
+"acc_discount": 0,
+"acc_ex_discount": 0,
+"meal_discount": 0,
+"basePrices": [],
+"basePricesForDiscount": null,
+"meal_prices": [
+640,
+640,
+640,
+640,
+640,
+640
+],
+"meal_prices_adt": [],
+"meal_prices_chd": [],
+"meal_prices_for_discount": null,
+"add_nights": [],
+"add_nights_for_discount": null,
+"add_nights_adt": [],
+"add_nights_chd": [],
+"add_nights_inf": [],
+"meal": null,
+"until": "2025-10-15",
+"status": 1,
+"transfers": null,
+"beveragePackages": null,
+"beveragePackage": null,
+"galaDinners": null,
+"ages": null,
+"meals_ages": null,
+"transfer_ages": null,
+"cancellations": [],
+"payments": [],
+"deposits": [],
+"blackOut": [],
+"repeatVisits": null,
+"nonrefundable_tariff": false,
+"spoStopSaleBlackDates": [],
+"unsetBad": [],
+"available_codes": [],
+"revisedAccommodation": null,
+"revisedStayDates": [],
+"revisedTaxes": null,
+"add_nights_adt_for_discount": null,
+"add_nights_chd_for_discount": null,
+"add_nights_inf_for_discount": null
+},
+"3062": {
+"id": 3062,
+"code": "WONDERS OF KIHAVAH 2025",
+"ids": [
+3062
+],
+"spoGroupKey": "3062",
+"items": [
+{
+"group": "meal",
+"name": "AD BB -> HB (0 USD)",
+"code": "WONDERS OF KIHAVAH 2025",
+"type": "meal_plan",
+"nights": 6,
+"count": 8,
+"discount": 7200,
+"price": null,
+"value": null,
+"since": "2025-08-23",
+"until": "2025-08-29",
+"text": null,
+"stayDates": null,
+"context": null
+},
+{
+"group": "meal",
+"name": "Child BB -> HB (0 USD)",
+"code": "WONDERS OF KIHAVAH 2025",
+"type": "meal_plan",
+"nights": 6,
+"count": 7,
+"discount": 0,
+"price": null,
+"value": null,
+"since": "2025-08-23",
+"until": "2025-08-29",
+"text": null,
+"stayDates": null,
+"context": null
+}
+],
+"discount": 7200,
+"price": 0,
+"room_type": null,
+"acc_discount": 0,
+"acc_ex_discount": 0,
+"meal_discount": 0,
+"basePrices": [],
+"basePricesForDiscount": null,
+"meal_prices": [
+640,
+640,
+640,
+640,
+640,
+640
+],
+"meal_prices_adt": [],
+"meal_prices_chd": [],
+"meal_prices_for_discount": null,
+"add_nights": [],
+"add_nights_for_discount": null,
+"add_nights_adt": [],
+"add_nights_chd": [],
+"add_nights_inf": [],
+"meal": null,
+"until": "2025-10-15",
+"status": 1,
+"transfers": null,
+"beveragePackages": null,
+"beveragePackage": null,
+"galaDinners": null,
+"ages": null,
+"meals_ages": null,
+"transfer_ages": null,
+"cancellations": [],
+"payments": [],
+"deposits": [],
+"blackOut": [],
+"repeatVisits": null,
+"nonrefundable_tariff": false,
+"spoStopSaleBlackDates": [],
+"unsetBad": [],
+"available_codes": [],
+"revisedAccommodation": null,
+"revisedStayDates": [],
+"revisedTaxes": null,
+"add_nights_adt_for_discount": null,
+"add_nights_chd_for_discount": null,
+"add_nights_inf_for_discount": null
+}
+}
+},
+"mealIndex": 2,
+"meal_items_exclude": [],
+"default_status": 1,
+"child_age_revised_transfers": null,
+"spoGroupsForGalaDinner": []
+} -->
+            Availability on request, price guaranted<br />
+
+            <div>
+              <a
+                data-href="https://pre.alacarte.ae/contract-search/sale-status?id=H4sIAAAAAAAAA4VPywqDMBD8FdlzlGTVGq8eei69ioc81rYQE0ib%2F28iQqEUyrI7zLAzMDNg23DZIMceGOD4IZINbIai%2Ft6FzQK7JZtE5ueQYjWRjSFsGZW5V5cQXHWl58OSN1R%2BJmA%2BOfd9QCi9KhyNVaQQUaMZNPUjrkZJq7v2sA0MIt2SUzGHxZC8hf%2Fepi5TuuVWNZc14hEHnl7AhDztVfkuLm%2BZQimYEQEAAA%3D%3D&amp;spo=&amp;default_status=1"
+                type="button"
+                class="btn btn-secondary mt-1 sale_calendar"
+                ><i class="fa fa-calendar-alt"></i
+              ></a>
+            </div>
+          </td>
+
+          <td>Contract Price</td>
+
+          <td></td>
+          <td>
+            <span class="contract-price"> 101 821.00 USD </span>
+            <br />
+            <a
+              target="_blank"
+              href="https://pre.alacarte.ae/contract-search/detail?id=H4sIAAAAAAAAA4VPywqDMBD8FdlzlGTVGq8eei69ioc81rYQE0ib%2F28iQqEUyrI7zLAzMDNg23DZIMceGOD4IZINbIai%2Ft6FzQK7JZtE5ueQYjWRjSFsGZW5V5cQXHWl58OSN1R%2BJmA%2BOfd9QCi9KhyNVaQQUaMZNPUjrkZJq7v2sA0MIt2SUzGHxZC8hf%2Fepi5TuuVWNZc14hEHnl7AhDztVfkuLm%2BZQimYEQEAAA%3D%3D"
+            >
+              Select Quotation
+            </a>
+          </td>
+          <td>
+            <!-- Политики -->
+
+            Cancellation policy:<br />
+            <div>22 Aug 2025 - 23 Aug 2025 fee 100%</div>
+
+            Payment policy:<br />
+            <div>22 Aug 2025 - 100%</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
