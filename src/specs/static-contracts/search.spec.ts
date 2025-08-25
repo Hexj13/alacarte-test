@@ -1,3 +1,4 @@
+import * as allure from 'allure-js-commons';
 import { expect, Page, test as base } from '@playwright/test';
 import * as constants from '@fixtures/constants';
 import { SearchResultTable } from '@pageobjects/components/searchResultTable.component';
@@ -42,6 +43,15 @@ test.describe('Static contracts', () => {
     contractSearchPage,
     searchResultTable,
   }) => {
+    allure.parameter(
+      '🎯 Test objective',
+      'Check the correctness of price display when searching for static contracts'
+    );
+    allure.parameter(
+      ' ✅ Expected result',
+      'The price in the first line of the result corresponds to the total price on the contract detail page'
+    );
+
     await test.step('Login as user', beforeEachStep);
 
     await test.step('Navigate to contract search page', async () => {
